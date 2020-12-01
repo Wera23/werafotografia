@@ -1,0 +1,23 @@
+.about {
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutContent {
+  display: flex;
+  width: 70vw;
+}
+
+.aboutDescripion {
+  flex: 2;
+}
+
+.aboutContact {
+  flex: 1;
+  padding-left: 50px;
+  flex-direction: column;
+}
