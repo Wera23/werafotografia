@@ -1,5 +1,7 @@
 .projects {
-  @include centralize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 100vw;
 }
@@ -8,7 +10,10 @@
   width: 50vw;
   height: 40vw;
   box-sizing: border-box;
-  @include centralizeColumn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .projectEl h3 {
@@ -20,7 +25,10 @@
 }
 
 .projectElLink {
-  @include centralizeColumn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-decoration: none;
 }
 

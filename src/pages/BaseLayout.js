@@ -30,7 +30,6 @@ const BaseLayout = ({ children }) => {
         </li>
       </ul>
       <div className={styles.pageTitle}>Wera Chodanionek</div>
-      {/* <Header /> */}
       {children}
 
       <p className={styles.footerText}>Wera Chodanionek Fotografia | 2020</p>

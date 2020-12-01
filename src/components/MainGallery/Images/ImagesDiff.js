@@ -1,4 +1,4 @@
-import { Dif1, Dif2, Dif3, Dif4, Dif5, Dif6, Dif7, Dif9, Dif8,Dif10, Dif11 } from "./index";
+import { Dif1, Dif2, Dif3, Dif4, Dif5, Dif6, Dif7, Dif9, Dif8,Dif10, Dif11, Dif12 } from "./index";
 
 const ImagesDiff = [
   {
@@ -33,6 +33,9 @@ const ImagesDiff = [
   },
   {
     src: Dif11,
+  },
+  {
+    src: Dif12,
   },
 ];
 

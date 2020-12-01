@@ -5,33 +5,6 @@
  */
 
 module.exports = {
-  rules: [
-    // TODO:
-    //
-    // Define loaders for files test: /\.module\.scss$/ in common
-    // here, we need only disable sourceMap for "css-loader"
-    {
-      use: [
-        "style-loader",
-        {
-          loader: "css-loader",
-          options: {
-            modules: true,
-            sourceMap: false,
-          },
-        },
-        "sass-loader",
-        // Share SASS variables, mixins and functions with all .sass files
-        {
-          loader: "sass-resources-loader",
-          options: {
-            resources: path.resolve(__dirname, "src/assets/styles/sass-resources.scss"),
-          },
-        },
-      ],
-      test: /\.module\.scss$/,
-    },
-  ],
   /* Your site config here */
   plugins: [
     {
@@ -52,9 +25,11 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-sass`,
+      loader: "sass-resources-loader",
       options: {
         cssLoaderOptions: {
           camelCase: false,
+          resources: "./src/assets/styles/sass-resources.scss",
         },
       },
     },
