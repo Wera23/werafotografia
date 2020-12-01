@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"
-import classnames from "classnames"
+import React, { useState, useEffect } from "react";
+import classnames from "classnames";
 
-import Gallery from "../../components/MainGallery/MainGallery"
-import "./Home.css"
+import Gallery from "../../components/MainGallery/MainGallery";
+import styles from "./Home.module.scss";
 
 const Home = () => {
   const [bgColor, setBgColor] = useState("bgHP1")
@@ -22,7 +22,7 @@ const Home = () => {
   })
 
   return (
-    <div className={classnames("homepage", bgColor)}>
+    <div className={classnames(styles.homepage, bgColor)}>
       <Gallery />
     </div>
   )

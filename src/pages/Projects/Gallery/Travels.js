@@ -6,17 +6,18 @@ import ImagesMacedonia from "../../../components/MainGallery/Images/ImagesMacedo
 import ImagesDiff from "../../../components/MainGallery/Images/ImagesDiff";
 import ImagesTravel from "../../../components/MainGallery/Images/ImagesTravel";
 
-import "./Galleries.css";
+import styles from "./Galleries.module.scss";
+
 
 const TravelGallery = () => {
   const gutter = "30px";
   
   return (
-    <div className="galleryTravels">
-      <div className="gallery">
+    <div className={styles.galleryTravels}>
+      <div className={styles.gallery}>
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={mainImagesPortugal[0].src} alt="" />
@@ -27,7 +28,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={mainImagesPortugal[3].src} alt="" />
@@ -37,7 +38,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={mainImagesPortugal[6].src} alt="" />
@@ -48,7 +49,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={mainImagesPortugal[8].src} alt="" />
@@ -58,7 +59,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={mainImagesPortugal[15].src} alt="" />
@@ -70,7 +71,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={mainImagesPortugal[19].src} alt="" />
@@ -89,7 +90,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={mainImagesPortugal[18].src} alt="" />
@@ -107,7 +108,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesMacedonia[2].src} alt="" />
@@ -118,7 +119,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesMacedonia[0].src} alt="" />
@@ -128,7 +129,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesMacedonia[5].src} alt="" />
@@ -138,7 +139,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesMacedonia[7].src} alt="" />
@@ -148,7 +149,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesMacedonia[9].src} alt="" />
@@ -158,7 +159,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesDiff[4].src} alt="" />
@@ -167,7 +168,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesTravel.Budapest[0].src} alt="" />
@@ -178,7 +179,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesTravel.Budapest[3].src} alt="" />
@@ -189,7 +190,7 @@ const TravelGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesTravel.Chorwacja[1].src} alt="" />

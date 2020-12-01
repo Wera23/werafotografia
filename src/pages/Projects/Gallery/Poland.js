@@ -7,18 +7,18 @@ import ImagesDiff from "../../../components/MainGallery/Images/ImagesDiff";
 import ImagesMazury from "../../../components/MainGallery/Images/ImagesMazury";
 import ImagesSea from "../../../components/MainGallery/Images/ImagesSea";
 
-import "./Galleries.css";
+import styles from "./Galleries.module.scss";
 
 const PolskaGallery = () => {
 
   const gutter = "30px";
   
   return (
-    <div className="galleryPoland">
-      <div className="gallery">
+    <div className={styles.galleryPoland}>
+      <div className={styles.gallery}>
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesPolska.Nature[0].src} alt="" />
@@ -28,7 +28,7 @@ const PolskaGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesDiff[3].src} alt="" />
@@ -38,7 +38,7 @@ const PolskaGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesMazury[2].src} alt="" />
@@ -49,7 +49,7 @@ const PolskaGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesMazury[0].src} alt="" />
@@ -59,7 +59,7 @@ const PolskaGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesMazury[5].src} alt="" />
@@ -69,7 +69,7 @@ const PolskaGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesMazury[7].src} alt="" />
@@ -79,7 +79,7 @@ const PolskaGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesMazury[8].src} alt="" />
@@ -90,7 +90,7 @@ const PolskaGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesPlaces[0].src} alt="" />
@@ -100,7 +100,7 @@ const PolskaGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesPlaces[2].src} alt="" />
@@ -110,7 +110,7 @@ const PolskaGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesPlaces[4].src} alt="" />
@@ -121,7 +121,7 @@ const PolskaGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesPolska.Nature[3].src} alt="" />
@@ -131,7 +131,7 @@ const PolskaGallery = () => {
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className="partOfgallery"
+          className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesSea[0].src} alt="" />

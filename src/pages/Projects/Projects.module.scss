@@ -1,7 +1,5 @@
 .projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centralize;
   flex-wrap: wrap;
   width: 100vw;
 }
@@ -10,10 +8,7 @@
   width: 50vw;
   height: 40vw;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include centralizeColumn;
 }
 
 .projectEl h3 {
@@ -25,10 +20,7 @@
 }
 
 .projectElLink {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include centralizeColumn;
   text-decoration: none;
 }
 
@@ -55,7 +47,7 @@
   width: 40vw;
   height: 30vw;
 }
-/* 
+
 .projectElImageMountains {
   background-image: url("../../components/MainGallery/Images/mountains10.jpg");
 }
@@ -70,4 +62,4 @@
 
 .projectElImageCats {
   background-image: url("../../components/MainGallery/Images/dif8.jpg");
-} */
+}

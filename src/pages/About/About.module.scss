@@ -2,9 +2,7 @@
   height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centralize;
 }
 
 .aboutContent {

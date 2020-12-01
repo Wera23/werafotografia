@@ -1,11 +1,11 @@
 import React from "react";
-import "./About.css";
+import styles from "./About.module.scss";
 
 const About = () => {
   return (
-    <div className="about">
-      <div className="aboutContent">
-        <div className="aboutDescripion">
+    <div className={styles.about}>
+      <div className={styles.aboutContent}>
+        <div className={styles.aboutDescripion}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             sagittis velit vitae vehicula mattis. Cras dui quam, pretium id
@@ -23,7 +23,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="aboutContact">
+        <div className={styles.aboutContact}>
           <h3>Kontakt:</h3>
           <p>werachodanionek@gmail.com</p>
           <p>666204224</p>
