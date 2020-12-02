@@ -24,9 +24,11 @@ const About = () => {
         </div>
 
         <div className={styles.aboutContact}>
-          <h3>Kontakt:</h3>
+         <div>
+         <h3>Kontakt:</h3>
           <p>werachodanionek@gmail.com</p>
           <p>666204224</p>
+         </div>
         </div>
       </div>
     </div>

@@ -72,6 +72,9 @@ export { default as Polska2 } from "./Polska2.jpg"
 export { default as Polska3 } from "./Polska3.jpg"
 export { default as Polska4 } from "./Polska4.jpg"
 export { default as Polska5 } from "./Polska5.jpg"
+export { default as Polska6 } from "./Polska6.jpg"
+export { default as Polska7 } from "./Polska7.jpg"
+
 
 export { default as Budapest1 } from "./budapest1.jpg"
 export { default as Budapest2 } from "./budapest2.jpg"
@@ -121,6 +124,13 @@ export { default as Cat11 } from "./cat11.jpg"
 export { default as Cat12 } from "./cat12.jpg"
 export { default as Cat13 } from "./cat13.jpg"
 export { default as Cat14 } from "./cat14.jpg"
+export { default as Cat15 } from "./cat15.jpg"
+export { default as Cat16 } from "./cat16.jpg"
+export { default as Cat17 } from "./cat17.jpg"
+export { default as Cat18 } from "./cat18.jpg"
+export { default as Cat19 } from "./cat19.jpg"
+export { default as Cat20 } from "./cat20.jpg"
+
 
 export { default as Sleed1 } from "./sleed1.jpg"
 export { default as Sleed2 } from "./sleed2.jpg"
@@ -167,3 +177,9 @@ export { default as Dif9 } from "./dif9.jpg"
 export { default as Dif10 } from "./dif10.jpg"
 export { default as Dif11 } from "./dif11.jpg"
 export { default as Dif12 } from "./dif12.jpg"
+export { default as Dif13 } from "./dif13.jpg"
+export { default as Dif14 } from "./dif14.jpg"
+export { default as Dif15 } from "./dif15.jpg"
+
+
+

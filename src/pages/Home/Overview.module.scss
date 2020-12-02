@@ -16,3 +16,70 @@ img {
   padding: 0 !important;
   margin: 0 !important;
 }
+
+.overviewFull{
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nonstandartOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  padding-top: 30%;
+}
+
+.nonstandartPhoto {
+  width: 80%;
+}
+
+.overviewScreen {
+  width: 100vw;
+  display: flex;
+  padding: 50px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.overviewScreenNorm{
+width: 80vw;
+}
+
+.overviewElement {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overviewElementNorm {
+  display: flex;
+}
+
+.overviewEnd{
+  justify-content: end;
+}
+
+.overviewImg100H {
+  width: auto;
+  height: 100%;
+  max-height: 100vh;
+}
+
+
+.overviewImgNormal {
+  width: 100%;
+  height: auto;
+}
+
+.overviewImgSmall {
+  width: 80%;
+}
+
+.overviewImgSmaller {
+  width: 90%;
+}

@@ -3,31 +3,9 @@
   justify-content: center;
   width: 100%;
   box-sizing: border-box; 
+  background-color: rgb(241, 240, 236);
 }
-
 
 .homepageGallery{
-  width: 75vw;
-}
-
-.bgHP1 {
-  background-color: rgba(240, 236, 231, 0.842);
-  transition: transform 0.6s ease;
-}
-
-.bgHP2 {
-  background-color: rgb(241, 236, 228);
-  transition: transform 6s ease;
-  animation: myanimation 1s;
-}
-
-@keyframes myanimation {
-  0% {
-    background-color: transparent;
-    color: transparent;
-  }
-  50% {
-    background-color: rgb(234, 238, 238);
-    color: rosybrown;
-  }
+  width: 85vw;
 }

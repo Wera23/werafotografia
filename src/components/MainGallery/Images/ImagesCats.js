@@ -13,6 +13,12 @@ import {
   Cat12,
   Cat13,
   Cat14,
+  Cat15,
+  Cat16,
+  Cat17,
+  Cat18,
+  Cat19,
+  Cat20
 } from "./index";
 
 const ImagesCats = [
@@ -59,6 +65,24 @@ const ImagesCats = [
   },
   {
     src: Cat14,
+  },
+  {
+    src: Cat15,
+  },
+  {
+    src: Cat16,
+  },
+  {
+    src: Cat17,
+  },
+  {
+    src: Cat18,
+  },
+  {
+    src: Cat19,
+  },
+  {
+    src: Cat20,
   },
 ];
 

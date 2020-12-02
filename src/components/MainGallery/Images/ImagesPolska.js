@@ -1,4 +1,4 @@
-import { Polska1, Polska2, Polska3, Polska4, Polska5 } from "./index";
+import { Polska1, Polska2, Polska3, Polska4, Polska5, Polska6, Polska7 } from "./index";
 
 const ImagesPolska = {
   Nature: [
@@ -16,6 +16,12 @@ const ImagesPolska = {
     },
     {
       src: Polska5,
+    },
+    {
+      src: Polska6,
+    },
+    {
+      src: Polska7,
     },
 
   ],

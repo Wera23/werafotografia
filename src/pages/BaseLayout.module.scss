@@ -4,13 +4,17 @@
   /* font-family: Ubuntu, sans-serif; */
   font-family: "Roboto Condensed", sans-serif;
   color: #575757;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.8;
   box-sizing: border-box !important;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   letter-spacing: 3;
+}
+
+body {
+  position: relative;
 }
 
 .page {
@@ -22,13 +26,25 @@
   width: 100vw;
 }
 
+.pageTitleScroll,
 .pageTitle {
+  font-family: "The Girl Next Door", cursive;
+}
+
+.pageTitleScroll {
+  display: block;
+  position: fixed;
+  bottom: 100px;
+  left: 50px;
+  transition: all ease-in 2s;
+}
+
+.pageTitle {
+  position: absolute;
   text-align: center;
   font-size: 22px;
-  position: absolute;
   top: 20px;
   left: 100px;
-  font-family: "The Girl Next Door", cursive;
 }
 
 .pageTitle {
@@ -54,7 +70,6 @@
   top: 20px;
   right: 100px;
   z-index: 23;
-  mix-blend-mode: difference;
   display: flex;
 }
 
@@ -63,6 +78,7 @@
   text-decoration: none;
   font-size: 16px;
   letter-spacing: 3px;
+  mix-blend-mode: difference !important;
 }
 
 .menuLink {

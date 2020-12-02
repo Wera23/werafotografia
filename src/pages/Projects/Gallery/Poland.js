@@ -134,9 +134,19 @@ const PolskaGallery = () => {
           className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
-            <img src={ImagesSea[0].src} alt="" />
-            <img src={ImagesSea[1].src} alt="" />
             <img src={ImagesSea[2].src} alt="" />
+            <img src={ImagesSea[1].src} alt="" />
+            <img src={ImagesSea[0].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry>
+
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesPolska.Nature[5].src} alt="" />
+            <img src={ImagesPolska.Nature[6].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
       </div>

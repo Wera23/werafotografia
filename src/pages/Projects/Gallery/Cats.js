@@ -19,7 +19,7 @@ const CatsGallery = () => {
         >
           <Masonry gutter={gutter}>
             <img src={ImagesCats[0].src} alt="" />
-            <img src={ImagesCats[2].src} alt="" />
+            <img src={ImagesCats[17].src} alt="" />
             <img src={ImagesCats[1].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
@@ -35,12 +35,24 @@ const CatsGallery = () => {
         </ResponsiveMasonry>
 
         <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesCats[2].src} alt="" />
+            <img src={ImagesCats[19].src} alt="" />
+            <img src={ImagesCats[18].src} alt="" />
+
+          </Masonry>
+        </ResponsiveMasonry>
+
+        <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
           className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesDiff[7].src} alt="" />
-            <img src={ImagesCats[10].src} alt="" />
+            <img src={ImagesCats[12].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
 
@@ -66,13 +78,26 @@ const CatsGallery = () => {
         </ResponsiveMasonry>
 
         <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 1 }}
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
           className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
-            <img src={ImagesCats[12].src} alt="" />
+            <img src={ImagesCats[10].src} alt="" />
+            <img src={ImagesCats[16].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
+
+        
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesCats[14].src} alt="" />
+            <img src={ImagesCats[15].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry>
+
       </div>
     </div>
   )

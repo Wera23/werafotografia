@@ -4,7 +4,11 @@ import classnames from "classnames"
 
 import styles from "./BaseLayout.module.scss"
 
+import { useDisplayNameScroll } from "../hooks/useDisplayName"
+
 const BaseLayout = ({ children }) => {
+  const isDisplayName = useDisplayNameScroll()
+
   return (
     <div className={styles.page}>
       <ul className={styles.menu}>
@@ -30,6 +34,11 @@ const BaseLayout = ({ children }) => {
         </li>
       </ul>
       <div className={styles.pageTitle}>Wera Chodanionek</div>
+
+      {isDisplayName === true && (
+        <div className={styles.pageTitleScroll}>Wera Chodanionek</div>
+      )}
+
       {children}
 
       <p className={styles.footerText}>Wera Chodanionek Fotografia | 2020</p>

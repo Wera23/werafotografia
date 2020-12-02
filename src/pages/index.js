@@ -1,6 +1,6 @@
 import React from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-
+import { ParallaxProvider } from 'react-scroll-parallax';
 import "../../fontello/css/fontello.css"
 
 import Home from "../pages/Home/Home"
@@ -16,7 +16,7 @@ import BaseLayout from "./BaseLayout"
 
 function IndexPage() {
   return (
-    <>
+    <> <ParallaxProvider>
       <Router>
         <BaseLayout>
           <Switch>
@@ -31,6 +31,7 @@ function IndexPage() {
           </Switch>
         </BaseLayout>
       </Router>
+      </ParallaxProvider>
     </>
   )
 }
