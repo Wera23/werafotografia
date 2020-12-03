@@ -8,6 +8,10 @@ import {
   Chorwacja2,
   Chorwacja3,
   Chorwacja4,
+  Slowenia1,
+  Slowenia2,
+  Slowenia3,
+  Slowenia4,
 } from "./index";
 
 const ImagesTravel = {
@@ -45,6 +49,22 @@ const ImagesTravel = {
       src: Chorwacja4,
     },
   ],
+
+  Slowenia: [
+    {
+      src: Slowenia1
+    },
+    {
+      src: Slowenia2
+    },
+    {
+      src: Slowenia3
+    },
+    {
+      src: Slowenia4
+    }
+
+  ]
 };
 
 export default ImagesTravel;

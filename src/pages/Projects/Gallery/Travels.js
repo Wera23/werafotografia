@@ -189,7 +189,7 @@ const TravelGallery = () => {
           </Masonry>
         </ResponsiveMasonry>
 
-        <ResponsiveMasonry
+        {/* <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
           className={styles.partOfgallery}
         >
@@ -198,7 +198,7 @@ const TravelGallery = () => {
             <img src={ImagesTravel.Budapest[4].src} alt="" />
             <img src={ImagesTravel.Chorwacja[0].src} alt="" />
           </Masonry>
-        </ResponsiveMasonry>
+        </ResponsiveMasonry> */}
 
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
@@ -208,6 +208,26 @@ const TravelGallery = () => {
             <img src={ImagesTravel.Chorwacja[1].src} alt="" />
             <img src={ImagesTravel.Chorwacja[2].src} alt="" />
             <img src={ImagesTravel.Chorwacja[3].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry>
+
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesTravel.Slowenia[0].src} alt="" />
+            <img src={ImagesTravel.Slowenia[1].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry>
+
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesTravel.Slowenia[2].src} alt="" />
+            <img src={ImagesTravel.Slowenia[3].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
 

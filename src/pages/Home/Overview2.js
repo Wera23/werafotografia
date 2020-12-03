@@ -12,6 +12,7 @@ import ImagesMountains from "../../components/MainGallery/Images/ImagesMountains
 import ImagesPortugal from "../../components/MainGallery/Images/MainImagesData"
 import ImagesMacedonia from "../../components/MainGallery/Images/ImagesMacedonia"
 import ImagesMazury from "../../components/MainGallery/Images/ImagesMazury"
+import ImagesSituations from "../../components/MainGallery/Images/ImagesSituation"
 
 const Overview2 = () => {
   return (
@@ -51,65 +52,76 @@ const Overview2 = () => {
       </div>
 
       <div
-        className={classnames(styles.overviewScreen, styles.overviewScreenNorm)}
+        className={classnames(styles.overviewScreen, styles.overviewElmPadding)}
       >
-        <img
-          className={styles.overviewImgNormal}
-          src={ImagesMountains[25].src}
-          alt=""
-        />
-
-        <div
-          className={classnames(styles.overviewElementNorm, styles.overviewEnd)}
-        >
+        <div className={styles.overviewElement}>
           <img
-            className={styles.overviewImgSmaller}
-            src={ImagesMountains[24].src}
+            className={styles.overviewImg100H}
+            src={ImagesMountains[25].src}
+            alt=""
+          ></img>
+        </div>
+        <div className={styles.overviewElement}>
+          <img
+            className={styles.overviewImgSmall}
+            src={ImagesMountains[19].src}
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div className={styles.overviewScreen}>
+        <div className={styles.overviewElement}>
+          <img
+            className={styles.overviewImg100H}
+            src={ImagesSituations.Sails[18].src}
+            alt=""
+          ></img>
+        </div>
+
+        <div className={styles.overviewElement}>
+          <img
+            className={styles.overviewImgSmall}
+            src={ImagesSituations.Sails[17].src}
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div className={classnames(styles.overviewScreen, styles.overviewElmPadding)}>
+        <div className={styles.overviewElement}>
+          <img
+            className={styles.overviewImgSmall}
+            src={ImagesMacedonia[0].src}
+            alt=""
+          />
+        </div>
+
+        <div className={styles.overviewElement}>
+          <img
+            className={styles.overviewImg100H}
+            src={ImagesPortugal[4].src}
             alt=""
           ></img>
         </div>
       </div>
 
-      <div
-        className={classnames(styles.overviewScreen, styles.overviewScreenNorm)}
-      >
-        <img
-          className={styles.overviewImgNormal}
-          src={ImagesMountains[4].src}
-          alt=""
-        />
-
-        <div
-          className={classnames(styles.overviewElementNorm, styles.overviewEnd)}
-        >
+      <div className={classnames(styles.overviewScreen, styles.overviewElmPadding)}>
+        <div className={styles.overviewElement}>
           <img
-            className={styles.overviewImgSmaller}
-            src={ImagesMountains[9].src}
-            alt=""
-          ></img>
-        </div>
-      </div>
-
-
-
-      
-
-      <div
-        className={classnames(styles.overviewScreen, styles.overviewScreenNorm)}
-      >
-        <div className={styles.overviewElementNorm}>
-          <img
-            className={styles.overviewImgSmaller}
-            src={ImagesMountains[1].src}
+            className={styles.overviewImg100H}
+            src={ImagesDiff[16].src}
             alt=""
           ></img>
         </div>
 
-        <img
-          className={styles.overviewImgNormal}
-          src={ImagesPlaces[8].src}
-          alt=""
-        />
+        <div className={styles.overviewElement}>
+          <img
+            className={styles.overviewImgSmall}
+            src={ImagesSituations.Dogs[2].src}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   )

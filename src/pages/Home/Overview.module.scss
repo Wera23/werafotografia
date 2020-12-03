@@ -1,6 +1,6 @@
 .overview {
   padding-top: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   background-color: transparent;
   height: 100%;
 }
@@ -17,7 +17,7 @@ img {
   margin: 0 !important;
 }
 
-.overviewFull{
+.overviewFull {
   width: 100%;
   flex-direction: column;
   display: flex;
@@ -46,22 +46,11 @@ img {
   align-items: center;
 }
 
-.overviewScreenNorm{
-width: 80vw;
-}
-
 .overviewElement {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.overviewElementNorm {
-  display: flex;
-}
-
-.overviewEnd{
-  justify-content: end;
 }
 
 .overviewImg100H {
@@ -70,16 +59,14 @@ width: 80vw;
   max-height: 100vh;
 }
 
-
-.overviewImgNormal {
-  width: 100%;
-  height: auto;
-}
-
 .overviewImgSmall {
   width: 80%;
 }
 
 .overviewImgSmaller {
   width: 90%;
+}
+
+.overviewElmPadding{
+  padding: 70px 10px;
 }

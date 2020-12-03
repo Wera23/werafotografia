@@ -48,6 +48,14 @@
   background-color: rgb(241, 236, 228);
 }
 
+.projectEl:nth-child(5) {
+  background-color: rgb(235, 243, 243);
+}
+
+.projectEl:nth-child(6) {
+  background-color: rgb(248, 248, 242);
+}
+
 .projectElImage {
   background-position: center;
   background-size: cover;
@@ -70,4 +78,8 @@
 
 .projectElImageCats {
   background-image: url("../../components/MainGallery/Images/dif8.jpg");
+}
+
+.projectElImageSituations {
+  background-image: url("../../components/MainGallery/Images/dif16.jpg");
 }

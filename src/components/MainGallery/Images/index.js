@@ -74,6 +74,48 @@ export { default as Polska4 } from "./Polska4.jpg"
 export { default as Polska5 } from "./Polska5.jpg"
 export { default as Polska6 } from "./Polska6.jpg"
 export { default as Polska7 } from "./Polska7.jpg"
+export { default as Polska8 } from "./Polska8.jpg"
+export { default as Polska9 } from "./Polska9.jpg"
+export { default as Polska10 } from "./Polska10.jpg"
+export { default as Polska11 } from "./Polska11.jpg"
+
+export { default as Slowenia1 } from "./slowenia1.jpg"
+export { default as Slowenia2 } from "./slowenia2.jpg"
+export { default as Slowenia3 } from "./slowenia3.jpg"
+export { default as Slowenia4 } from "./slowenia4.jpg"
+
+export { default as Teatr1 } from "./teatr1.jpg"
+export { default as Teatr2 } from "./teatr2.jpg"
+export { default as Teatr3 } from "./teatr3.jpg"
+export { default as Teatr4 } from "./teatr4.jpg"
+export { default as Teatr5 } from "./teatr5.jpg"
+
+export { default as Husky1 } from "./husky1.jpg"
+export { default as Husky2 } from "./husky2.jpg"
+export { default as Husky3 } from "./husky3.jpg"
+export { default as Husky4 } from "./husky4.jpg"
+
+
+export { default as Sails1 } from "./zagle1.jpg"
+export { default as Sails2 } from "./zagle2.jpg"
+export { default as Sails3 } from "./zagle3.jpg"
+export { default as Sails4 } from "./zagle4.jpg"
+export { default as Sails5 } from "./zagle5.jpg"
+export { default as Sails6 } from "./zagle6.jpg"
+export { default as Sails7 } from "./zagle7.jpg"
+export { default as Sails8 } from "./zagle8.jpg"
+export { default as Sails9 } from "./zagle9.jpg"
+export { default as Sails10 } from "./zagle10.jpg"
+export { default as Sails11 } from "./zagle11.jpg"
+export { default as Sails12 } from "./zagle12.jpg"
+export { default as Sails13 } from "./zagle13.jpg"
+export { default as Sails14 } from "./zagle14.jpg"
+export { default as Sails15 } from "./zagle15.jpg"
+export { default as Sails16 } from "./zagle16.jpg"
+export { default as Sails17 } from "./zagle17.jpg"
+export { default as Sails18 } from "./zagle18.jpg"
+export { default as Sails19 } from "./zagle19.jpg"
+
 
 
 export { default as Budapest1 } from "./budapest1.jpg"
@@ -131,7 +173,6 @@ export { default as Cat18 } from "./cat18.jpg"
 export { default as Cat19 } from "./cat19.jpg"
 export { default as Cat20 } from "./cat20.jpg"
 
-
 export { default as Sleed1 } from "./sleed1.jpg"
 export { default as Sleed2 } from "./sleed2.jpg"
 export { default as Sleed3 } from "./sleed3.jpg"
@@ -180,6 +221,8 @@ export { default as Dif12 } from "./dif12.jpg"
 export { default as Dif13 } from "./dif13.jpg"
 export { default as Dif14 } from "./dif14.jpg"
 export { default as Dif15 } from "./dif15.jpg"
-
+export { default as Dif16 } from "./dif16.jpg"
+export { default as Dif17 } from "./dif17.jpg"
+export { default as Dif19 } from "./dif19.jpg"
 
 
