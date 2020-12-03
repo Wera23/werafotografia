@@ -1,5 +1,4 @@
 import React from "react"
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import classnames from "classnames"
 
 import styles from "./Overview.module.scss"
@@ -13,6 +12,8 @@ import ImagesPortugal from "../../components/MainGallery/Images/MainImagesData"
 import ImagesMacedonia from "../../components/MainGallery/Images/ImagesMacedonia"
 import ImagesMazury from "../../components/MainGallery/Images/ImagesMazury"
 import ImagesSituations from "../../components/MainGallery/Images/ImagesSituation"
+import ImagesDogsSleeding from "../../components/MainGallery/Images/ImagesDogsSleeding"
+import ImagesPolska from "../../components/MainGallery/Images/ImagesPolska"
 
 const Overview2 = () => {
   return (
@@ -25,7 +26,10 @@ const Overview2 = () => {
             alt=""
           ></img>
         </div>
-        <div className={styles.overviewElement}>
+        <div
+          className={classnames(styles.overviewElement, styles.overviewElName)}
+        >
+          <h4>Natura</h4>
           <img
             className={styles.overviewImgSmall}
             src={ImagesPlaces[3].src}
@@ -35,7 +39,10 @@ const Overview2 = () => {
       </div>
 
       <div className={styles.overviewScreen}>
-        <div className={styles.overviewElement}>
+        <div
+          className={classnames(styles.overviewElement, styles.overviewElName)}
+        >
+          <h4>Koty</h4>
           <img
             className={styles.overviewImgSmall}
             src={ImagesCats[6].src}
@@ -57,16 +64,43 @@ const Overview2 = () => {
         <div className={styles.overviewElement}>
           <img
             className={styles.overviewImg100H}
-            src={ImagesMountains[25].src}
+            src={ImagesSituations.Dogs[3].src}
             alt=""
           ></img>
         </div>
-        <div className={styles.overviewElement}>
+
+        <div
+          className={classnames(styles.overviewElement, styles.overviewElName)}
+        >
+          <h4>Sytuacje</h4>
           <img
             className={styles.overviewImgSmall}
-            src={ImagesMountains[19].src}
+            src={ImagesSituations.Teatr[3].src}
             alt=""
           />
+        </div>
+      </div>
+
+      <div
+        className={classnames(styles.overviewScreen, styles.overviewElmPadding)}
+      >
+        <div
+          className={classnames(styles.overviewElement, styles.overviewElName)}
+        >
+          <h4>Góry</h4>
+          <img
+            className={styles.overviewImgSmall}
+            src={ImagesMountains[25].src}
+            alt=""
+          />
+        </div>
+
+        <div className={styles.overviewElement}>
+          <img
+            className={styles.overviewImg100H}
+            src={ImagesMountains[19].src}
+            alt=""
+          ></img>
         </div>
       </div>
 
@@ -79,7 +113,10 @@ const Overview2 = () => {
           ></img>
         </div>
 
-        <div className={styles.overviewElement}>
+        <div
+          className={classnames(styles.overviewElement, styles.overviewElName)}
+        >
+          <h4>Żeglarstwo</h4>
           <img
             className={styles.overviewImgSmall}
             src={ImagesSituations.Sails[17].src}
@@ -88,8 +125,13 @@ const Overview2 = () => {
         </div>
       </div>
 
-      <div className={classnames(styles.overviewScreen, styles.overviewElmPadding)}>
-        <div className={styles.overviewElement}>
+      <div
+        className={classnames(styles.overviewScreen, styles.overviewElmPadding)}
+      >
+        <div
+          className={classnames(styles.overviewElement, styles.overviewElName)}
+        >
+          <h4>Podróże</h4>
           <img
             className={styles.overviewImgSmall}
             src={ImagesMacedonia[0].src}
@@ -100,25 +142,31 @@ const Overview2 = () => {
         <div className={styles.overviewElement}>
           <img
             className={styles.overviewImg100H}
-            src={ImagesPortugal[4].src}
+            src={ImagesPortugal[3].src}
             alt=""
           ></img>
         </div>
       </div>
 
-      <div className={classnames(styles.overviewScreen, styles.overviewElmPadding)}>
+      <div
+        className={classnames(styles.overviewScreen, styles.overviewElmPadding)}
+      >
+       
         <div className={styles.overviewElement}>
           <img
             className={styles.overviewImg100H}
-            src={ImagesDiff[16].src}
+            src={ImagesDiff[5].src}
             alt=""
           ></img>
         </div>
 
-        <div className={styles.overviewElement}>
+        <div
+          className={classnames(styles.overviewElement, styles.overviewElName)}
+        >
+          <h4>Polska</h4>
           <img
             className={styles.overviewImgSmall}
-            src={ImagesSituations.Dogs[2].src}
+            src={ImagesPolska.Nature[1].src}
             alt=""
           />
         </div>

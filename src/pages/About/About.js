@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "./About.module.scss";
+import Photo from "./images/image2.jpg";
 
 const About = () => {
   return (
     <div className={styles.about}>
+
+<img src={Photo} className={styles.aboutPhoto}/>
       <div className={styles.aboutContent}>
         <div className={styles.aboutDescripion}>
           <p>
@@ -21,6 +24,8 @@ const About = () => {
             Praesent nisl elit, consectetur nec augue et, cursus elementum
             neque.
           </p>
+
+         
         </div>
 
         <div className={styles.aboutContact}>
@@ -30,6 +35,8 @@ const About = () => {
           <p>666204224</p>
          </div>
         </div>
+
+       
       </div>
     </div>
   );

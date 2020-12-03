@@ -226,3 +226,4 @@ export { default as Dif17 } from "./dif17.jpg"
 export { default as Dif19 } from "./dif19.jpg"
 
 
+export { default as Wera } from "./ja.jpg"

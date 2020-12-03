@@ -1,5 +1,5 @@
 .about {
-  height: 100vh;
+ min-height: 100vh;
   overflow: hidden;
   width: 100vw;
   box-sizing: border-box;
@@ -11,7 +11,7 @@
 
 .aboutContent {
   display: flex;
-  width: 70vw;
+  width: 60vw;
 }
 
 .aboutDescripion {
@@ -19,7 +19,8 @@
 }
 
 .aboutDescripion p {
-  margin-right: 30px;
+  margin-left: 50px;
+  
 }
 
 .aboutContact {
@@ -27,4 +28,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right: 50px;
+}
+
+
+.aboutPhoto{
+  width: 40%;
+  height: auto;
 }
