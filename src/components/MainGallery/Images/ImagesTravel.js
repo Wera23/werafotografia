@@ -12,6 +12,8 @@ import {
   Slowenia2,
   Slowenia3,
   Slowenia4,
+  Wegry3,
+  Wegry4,
 } from "./index";
 
 const ImagesTravel = {
@@ -31,6 +33,15 @@ const ImagesTravel = {
 
     {
       src: Budapest5,
+    },
+  ],
+
+  Wegry: [
+    {
+      src: Wegry3,
+    },
+    {
+      src: Wegry4,
     },
   ],
 

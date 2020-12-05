@@ -13,6 +13,7 @@ const PolskaGallery = () => {
 
   return (
     <div className="galleryPoland">
+      AAAAAAAAAAAAAA
       <div className="gallery">
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
@@ -124,6 +125,16 @@ const PolskaGallery = () => {
           <Masonry gutter={gutter}>
             <img src={ImagesPolska.Nature[3].src} alt="" />
             <img src={ImagesPolska.Nature[4].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry>
+
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className="partOfgallery"
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesPolska.Nature[11].src} alt="" />
+            <img src={ImagesPolska.Nature[12].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
 

@@ -65,13 +65,13 @@ const Projects = () => {
       </div>
 
       <div className={styles.projectEl}>
-        <Link className={styles.projectElLink} to="/">
+        <Link className={styles.projectElLink} to="/themes">
           <div
             className={classnames(
               styles.projectElImage,
             )}
           ></div>
-          <h3></h3>
+          <h3>Wypatrzone</h3>
         </Link>
       </div>
     </div>

@@ -1,5 +1,5 @@
 
-import { Macedonia1, Macedonia2, Macedonia3, Macedonia4, Macedonia5, Macedonia6, Macedonia7, Macedonia8, Macedonia9, Wegry1, Wegry2 } from "./index";
+import { Macedonia1, Macedonia2, Macedonia3, Macedonia4, Macedonia5, Macedonia6, Macedonia7, Macedonia8, Macedonia9, Wegry1, Wegry2, Wegry3, Wegry4 } from "./index";
 
 const ImagesMacedonia = [
   {

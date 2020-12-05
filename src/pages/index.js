@@ -9,6 +9,7 @@ import About from "../pages/About/About"
 import Projects from "../pages/Projects/Projects"
 import Activities from "../components/MainGallery/ActivitiesGallery"
 import Travels from "./Projects/Gallery/Travels"
+import Themes from "./Projects/Gallery/Themes"
 import Cats from "./Projects/Gallery/Cats"
 import Polska from "./Projects/Gallery/Poland"
 import Mountains from "../pages/Projects/Gallery/Mountains"
@@ -34,6 +35,7 @@ function IndexPage() {
                 <Route exact path="/activities" component={Activities} />
                 <Route exact path="/poland" component={Polska} />
                 <Route exact path="/situations" component={Situations} />
+                <Route exact path="/themes" component={Themes} />
               </Switch>
             </BaseLayout>
           </ScrollToTop>

@@ -57,6 +57,18 @@ export { default as Mountains32 } from "./mountains32.jpg"
 export { default as Mountains33 } from "./mountains33.jpg"
 export { default as Mountains34 } from "./mountains34.jpg"
 export { default as Mountains35 } from "./mountains35.jpg"
+export { default as Mountains36 } from "./mountains36.jpg"
+export { default as Mountains37 } from "./mountains37.jpg"
+export { default as Mountains38 } from "./mountains38.jpg"
+export { default as Mountains39 } from "./mountains39.jpg"
+export { default as Mountains40 } from "./mountains40.jpg"
+export { default as Mountains41 } from "./mountains41.jpg"
+export { default as Mountains42 } from "./mountains42.jpg"
+export { default as Mountains43 } from "./mountains43.jpg"
+
+
+
+
 
 export { default as Sea1 } from "./sea1.jpg"
 export { default as Sea2 } from "./sea2.jpg"
@@ -78,6 +90,9 @@ export { default as Polska8 } from "./Polska8.jpg"
 export { default as Polska9 } from "./Polska9.jpg"
 export { default as Polska10 } from "./Polska10.jpg"
 export { default as Polska11 } from "./Polska11.jpg"
+export { default as Polska12 } from "./Polska12.jpg"
+export { default as Polska13 } from "./Polska13.jpg"
+
 
 export { default as Slowenia1 } from "./slowenia1.jpg"
 export { default as Slowenia2 } from "./slowenia2.jpg"
@@ -194,6 +209,9 @@ export { default as Macedonia9 } from "./macedonia9.jpg"
 
 export { default as Wegry1 } from "./wegry1.jpg"
 export { default as Wegry2 } from "./wegry2.jpg"
+export { default as Wegry3 } from "./wegry3.jpg"
+export { default as Wegry4 } from "./wegry4.jpg"
+
 
 export { default as Sail1 } from "./sail1.jpg"
 export { default as Sail2 } from "./sail2.jpg"

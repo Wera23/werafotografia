@@ -231,6 +231,16 @@ const TravelGallery = () => {
           </Masonry>
         </ResponsiveMasonry>
 
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesTravel.Wegry[0].src} alt="" />
+            <img src={ImagesTravel.Wegry[1].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry>
+
    
       </div>
     </div>

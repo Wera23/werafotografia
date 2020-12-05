@@ -8,6 +8,7 @@ import ImagesMazury from "../../../components/MainGallery/Images/ImagesMazury";
 import ImagesSea from "../../../components/MainGallery/Images/ImagesSea";
 
 import styles from "./Galleries.module.scss";
+import ImagesMountains from "../../../components/MainGallery/Images/ImagesMountains";
 
 const PolskaGallery = () => {
 
@@ -167,6 +168,16 @@ const PolskaGallery = () => {
           <Masonry gutter={gutter}>
             <img src={ImagesPolska.Nature[7].src} alt="" />
             <img src={ImagesPolska.Nature[8].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry>
+
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className="partOfgallery"
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesPolska.Nature[12].src} alt="" />
+            <img src={ImagesMountains[39].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
       </div>
