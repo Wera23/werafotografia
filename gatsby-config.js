@@ -8,6 +8,16 @@ module.exports = {
   /* Your site config here */
   plugins: [
     {
+      resolve: `gatsby-plugin-sass`,
+      loader: "sass-resources-loader",
+      options: {
+        cssLoaderOptions: {
+          camelCase: false,
+          resources: "./src/assets/styles/sass-resources.scss",
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-react-css-modules`,
       options: {
         // *.css files are included by default.
@@ -23,15 +33,6 @@ module.exports = {
         // For all the options check babel-plugin-react-css-modules README link provided above
       },
     },
-    {
-      resolve: `gatsby-plugin-sass`,
-      loader: "sass-resources-loader",
-      options: {
-        cssLoaderOptions: {
-          camelCase: false,
-          resources: "./src/assets/styles/sass-resources.scss",
-        },
-      },
-    },
+    
   ],
 }

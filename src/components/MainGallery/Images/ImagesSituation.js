@@ -26,7 +26,13 @@ import {
   Sails16,
   Sails17,
   Sails18,
-  Sails19
+  Sails19,
+  Sails21,
+  Sails22,
+  Sails20,
+  Sails23,
+  Sails24,
+  Sails25
 } from "./index"
 
 const ImagesSituations = {
@@ -83,6 +89,14 @@ const ImagesSituations = {
     { src: Sails17 },
     { src: Sails18 },
     { src: Sails19 },
+    { src: Sails20 },
+    { src: Sails21 },
+    { src: Sails22 },
+    { src: Sails23 },
+    { src: Sails24 },
+    { src: Sails25 },
+
+
 
   ],
 }

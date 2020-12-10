@@ -64,7 +64,7 @@ const TravelGallery = () => {
           <Masonry gutter={gutter}>
             <img src={mainImagesPortugal[15].src} alt="" />
             {/* <img src={mainImagesPortugal[10].src} alt="" /> */}
-            <img src={mainImagesPortugal[11].src} alt="" />
+            <img className={styles.photoMobileHidden} src={mainImagesPortugal[11].src} alt="" />
             <img src={mainImagesPortugal[12].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
@@ -93,7 +93,7 @@ const TravelGallery = () => {
           className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
-            <img src={mainImagesPortugal[18].src} alt="" />
+            <img className={styles.photoMobileHidden} src={mainImagesPortugal[18].src} alt="" />
             <img src={mainImagesPortugal[20].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
@@ -238,6 +238,17 @@ const TravelGallery = () => {
           <Masonry gutter={gutter}>
             <img src={ImagesTravel.Wegry[0].src} alt="" />
             <img src={ImagesTravel.Wegry[1].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry>
+
+
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesDiff[18].src} alt="" />
+            <img src={ImagesDiff[19].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
 

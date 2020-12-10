@@ -57,12 +57,22 @@ const CatsGallery = () => {
         </ResponsiveMasonry>
 
         <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img className={styles.photoMobileHidden} src={ImagesCats[10].src} alt="" />
+            <img src={ImagesCats[16].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry>
+
+        <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
           className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
             <img src={ImagesCats[5].src} alt="" />
-            <img src={ImagesCats[4].src} alt="" />
+            <img className={styles.photoMobileHidden} src={ImagesCats[4].src} alt="" />
             <img src={ImagesCats[11].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
@@ -77,15 +87,7 @@ const CatsGallery = () => {
           </Masonry>
         </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesCats[10].src} alt="" />
-            <img src={ImagesCats[16].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+   
 
         
         <ResponsiveMasonry

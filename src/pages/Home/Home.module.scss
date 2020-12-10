@@ -11,3 +11,18 @@
 .homepageGallery{
   width: 85vw;
 }
+
+
+.displayMobile{
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .displayMobile{
+    display: block;
+  }
+
+  .displayDesktop{
+    display: none;
+  }
+}

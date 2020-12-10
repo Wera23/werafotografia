@@ -6,7 +6,6 @@ import ImagesDiff from "../../../components/MainGallery/Images/ImagesDiff"
 import ImagesPlaces from "../../../components/MainGallery/Images/ImagesPlaces"
 
 import styles from "./Galleries.module.scss"
-import ImagesMacedonia from "../../../components/MainGallery/Images/ImagesMacedonia"
 
 const MountainsGallery = () => {
   const gutter = "30px"
@@ -52,7 +51,11 @@ const MountainsGallery = () => {
           <Masonry gutter={gutter}>
             <img src={ImagesMountains[10].src} alt="" />
             <img src={ImagesMountains[13].src} alt="" />
-            <img src={ImagesMountains[12].src} alt="" />
+            <img
+              className={styles.photoMobileHidden}
+              src={ImagesMountains[12].src}
+              alt=""
+            />
           </Masonry>
         </ResponsiveMasonry>
 
@@ -69,7 +72,11 @@ const MountainsGallery = () => {
         >
           <Masonry gutter={gutter}>
             <img src={ImagesMountains[25].src} alt="" />
-            <img src={ImagesMountains[24].src} alt="" />
+            <img
+              className={styles.photoMobileHidden}
+              src={ImagesMountains[24].src}
+              alt=""
+            />
           </Masonry>
         </ResponsiveMasonry>
 
@@ -89,7 +96,11 @@ const MountainsGallery = () => {
         >
           <Masonry gutter={gutter}>
             <img src={ImagesMountains[17].src} alt="" />
-            <img src={ImagesMountains[16].src} alt="" />
+            <img
+              className={styles.photoMobileHidden}
+              src={ImagesMountains[16].src}
+              alt=""
+            />
             <img src={ImagesMountains[15].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
@@ -99,7 +110,21 @@ const MountainsGallery = () => {
           className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
-            <img src={ImagesMountains[7].src} alt="" />
+            <img src={ImagesMountains[47].src} alt="" />
+            <img src={ImagesMountains[6].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry>
+
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img
+              className={styles.photoMobileHidden}
+              src={ImagesMountains[7].src}
+              alt=""
+            />
             <img src={ImagesMountains[19].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
@@ -112,7 +137,11 @@ const MountainsGallery = () => {
             <img src={ImagesMountains[20].src} alt="" />
             {/* <img src={ImagesMountains[21].src} alt="" /> */}
             <img src={ImagesDiff[10].src} alt="" />
-            <img src={ImagesMountains[21].src} alt="" />
+            <img
+              className={styles.photoMobileHidden}
+              src={ImagesMountains[21].src}
+              alt=""
+            />
           </Masonry>
         </ResponsiveMasonry>
 
@@ -132,8 +161,16 @@ const MountainsGallery = () => {
         >
           <Masonry gutter={gutter}>
             <img src={ImagesPlaces[9].src} alt="" />
-            <img src={ImagesPlaces[10].src} alt="" />
-            <img src={ImagesPlaces[11].src} alt="" />
+            <img
+              className={styles.photoMobileHidden}
+              src={ImagesPlaces[10].src}
+              alt=""
+            />
+            <img
+              className={styles.photoMobileHidden}
+              src={ImagesPlaces[11].src}
+              alt=""
+            />
           </Masonry>
         </ResponsiveMasonry>
 
@@ -178,8 +215,6 @@ const MountainsGallery = () => {
           </Masonry>
         </ResponsiveMasonry>
 
-      
-
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
           className={styles.partOfgallery}
@@ -187,7 +222,6 @@ const MountainsGallery = () => {
           <Masonry gutter={gutter}>
             <img src={ImagesDiff[6].src} alt="" />
             <img src={ImagesMountains[36].src} alt="" />
-            
           </Masonry>
         </ResponsiveMasonry>
 
@@ -198,7 +232,6 @@ const MountainsGallery = () => {
           <Masonry gutter={gutter}>
             <img src={ImagesMountains[42].src} alt="" />
             <img src={ImagesMountains[41].src} alt="" />
-
           </Masonry>
         </ResponsiveMasonry>
         {/* 
@@ -209,6 +242,26 @@ const MountainsGallery = () => {
           <Masonry gutter={gutter}>
             <img src={ImagesMountains[11].src} alt="" />
             <img src={ImagesMountains[12].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry> */}
+
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesMountains[43].src} alt="" />
+            <img src={ImagesMountains[44].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry>
+
+        {/* <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesMountains[45].src} alt="" />
+            <img src={ImagesMountains[46].src} alt="" />
           </Masonry>
         </ResponsiveMasonry> */}
       </div>

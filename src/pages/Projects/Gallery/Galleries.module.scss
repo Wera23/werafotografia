@@ -5,8 +5,9 @@ img {
 }
 
 .gallery {
+  //width: calc(100vw - 60px);
   width: 75vw;
-  padding-top: 100px;  
+  padding-top: 8vh;
   padding-bottom: 50px;
   box-sizing: border-box;
 }
@@ -43,4 +44,16 @@ img {
 .galleryPoland {
   background-color: rgb(241, 241, 233);
   width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    width: 90vw;
+    padding-top: 0px;
+  }
+  .photoMobileHidden {
+    display: none;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }

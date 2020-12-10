@@ -4,6 +4,8 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100vw;
+  padding-top: 8vh;
+  background-color: rgb(234, 238, 238);
 }
 
 .projectEl {
@@ -33,11 +35,11 @@
 }
 
 .projectEl:first-child {
-  background-color: rgba(240, 236, 231, 0.842);
+  background-color: rgb(234, 238, 238);
 }
 
 .projectEl:nth-child(2) {
-  background-color: rgb(234, 238, 238);
+  background-color: rgba(240, 236, 231, 0.842);
 }
 
 .projectEl:nth-child(3) {
@@ -53,7 +55,8 @@
 }
 
 .projectEl:nth-child(6) {
-  background-color: rgb(248, 248, 242);
+  //background-color: rgb(248, 248, 242);
+  background-color: rgba(240, 236, 231, 0.842);
 }
 
 .projectElImage {
@@ -82,4 +85,19 @@
 
 .projectElImageSituations {
   background-image: url("../../components/MainGallery/Images/dif16.jpg");
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding-top: 0px;
+  }
+  .projectEl {
+    width: 100vw;
+    height: 70vw;
+  }
+
+  .projectElImage {
+    width: 90vw;
+    height: 60vw;
+  }
 }

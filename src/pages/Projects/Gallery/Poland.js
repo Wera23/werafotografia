@@ -73,7 +73,7 @@ const PolskaGallery = () => {
           className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
-            <img src={ImagesMazury[7].src} alt="" />
+            <img className={styles.photoMobileHidden}src={ImagesMazury[7].src} alt="" />
             <img src={ImagesMazury[11].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
@@ -83,7 +83,7 @@ const PolskaGallery = () => {
           className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
-            <img src={ImagesMazury[8].src} alt="" />
+            <img className={styles.photoMobileHidden} src={ImagesMazury[8].src} alt="" />
             <img src={ImagesMazury[9].src} alt="" />
             <img src={ImagesMazury[10].src} alt="" />
           </Masonry>
@@ -104,7 +104,7 @@ const PolskaGallery = () => {
           className={styles.partOfgallery}
         >
           <Masonry gutter={gutter}>
-            <img src={ImagesPlaces[2].src} alt="" />
+            <img className={styles.photoMobileHidden} src={ImagesPlaces[2].src} alt="" />
             <img src={ImagesPlaces[3].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
@@ -136,7 +136,7 @@ const PolskaGallery = () => {
         >
           <Masonry gutter={gutter}>
             <img src={ImagesPolska.Nature[9].src} alt="" />
-            <img src={ImagesPolska.Nature[10].src} alt="" />
+            <img className={styles.photoMobileHidden} src={ImagesPolska.Nature[10].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
 
@@ -167,7 +167,7 @@ const PolskaGallery = () => {
         >
           <Masonry gutter={gutter}>
             <img src={ImagesPolska.Nature[7].src} alt="" />
-            <img src={ImagesPolska.Nature[8].src} alt="" />
+            <img className={styles.photoMobileHidden} src={ImagesPolska.Nature[8].src} alt="" />
           </Masonry>
         </ResponsiveMasonry>
 

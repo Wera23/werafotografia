@@ -1,5 +1,6 @@
 import React from "react"
 import classnames from "classnames"
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 
 import styles from "./Overview.module.scss"
 import { Parallax } from "react-scroll-parallax"
@@ -16,6 +17,8 @@ import ImagesDogsSleeding from "../../components/MainGallery/Images/ImagesDogsSl
 import ImagesPolska from "../../components/MainGallery/Images/ImagesPolska"
 
 const Overview2 = () => {
+  const gutter = "50px"
+
   return (
     <div className={styles.overviewFull}>
       <div className={styles.overviewScreen}>
@@ -38,6 +41,21 @@ const Overview2 = () => {
         </div>
       </div>
 
+      <div className={styles.HPGallery}>
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesMountains[43].src} alt="" />
+            <img
+              src={ImagesMountains[47].src}
+              alt=""
+            />
+          </Masonry>
+        </ResponsiveMasonry>
+      </div>
+
       <div className={styles.overviewScreen}>
         <div
           className={classnames(styles.overviewElement, styles.overviewElName)}
@@ -56,6 +74,21 @@ const Overview2 = () => {
             alt=""
           ></img>
         </div>
+      </div>
+
+
+      
+      <div className={styles.HPGallery}>
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesCats[9].src} alt="" />
+            <img src={ImagesCats[12].src} alt="" />
+         
+          </Masonry>
+        </ResponsiveMasonry>
       </div>
 
       <div
@@ -104,6 +137,21 @@ const Overview2 = () => {
         </div>
       </div>
 
+      <div className={styles.HPGallery}>
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesMountains[31].src} alt="" />
+            <img
+              src={ImagesMountains[1].src}
+              alt=""
+            />
+          </Masonry>
+        </ResponsiveMasonry>
+      </div>
+
       <div className={styles.overviewScreen}>
         <div className={styles.overviewElement}>
           <img
@@ -142,16 +190,30 @@ const Overview2 = () => {
         <div className={styles.overviewElement}>
           <img
             className={styles.overviewImg100H}
-            src={ImagesPortugal[3].src}
+            src={ImagesPortugal[5].src}
             alt=""
           ></img>
         </div>
       </div>
 
+      <div className={styles.HPGallery}>
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesPortugal[20].src} alt="" />
+            <img
+              src={ImagesDiff[4].src}
+              alt=""
+            />
+          </Masonry>
+        </ResponsiveMasonry>
+      </div>
+
       <div
         className={classnames(styles.overviewScreen, styles.overviewElmPadding)}
       >
-       
         <div className={styles.overviewElement}>
           <img
             className={styles.overviewImg100H}

@@ -9,10 +9,13 @@ import Overview2 from "./Overview2"
 const Home = () => {
   return (
     <div className={classnames(styles.homepage)}>
-       <Overview2 />
-      {/* <div className={styles.homepageGallery}>
-        <Overview />
-      </div> */}
+    <div className={styles.displayMobile}>
+    <Overview />
+    </div>
+    <div className={styles.displayDesktop}>
+    <Overview2 />
+    </div>
+     
     </div>
   )
 }

@@ -65,6 +65,14 @@ export { default as Mountains40 } from "./mountains40.jpg"
 export { default as Mountains41 } from "./mountains41.jpg"
 export { default as Mountains42 } from "./mountains42.jpg"
 export { default as Mountains43 } from "./mountains43.jpg"
+export { default as Mountains44 } from "./mountains44.jpg"
+export { default as Mountains45 } from "./mountains45.jpg"
+export { default as Mountains46 } from "./mountains46.jpg"
+export { default as Mountains47 } from "./mountains47.jpg"
+export { default as Mountains48 } from "./mountains48.jpg"
+export { default as Mountains49 } from "./mountains49.jpg"
+
+
 
 
 
@@ -130,6 +138,15 @@ export { default as Sails16 } from "./zagle16.jpg"
 export { default as Sails17 } from "./zagle17.jpg"
 export { default as Sails18 } from "./zagle18.jpg"
 export { default as Sails19 } from "./zagle19.jpg"
+export { default as Sails20 } from "./zagle20.jpg"
+export { default as Sails21 } from "./zagle21.jpg"
+export { default as Sails22 } from "./zagle22.jpg"
+export { default as Sails23 } from "./zagle23.jpg"
+export { default as Sails24 } from "./zagle24.jpg"
+export { default as Sails25 } from "./zagle25.jpg"
+
+
+
 
 
 
@@ -242,6 +259,8 @@ export { default as Dif15 } from "./dif15.jpg"
 export { default as Dif16 } from "./dif16.jpg"
 export { default as Dif17 } from "./dif17.jpg"
 export { default as Dif19 } from "./dif19.jpg"
+export { default as Dif20 } from "./dif20.jpg"
+export { default as Dif21 } from "./dif21.jpg"
 
 
 export { default as Wera } from "./ja.jpg"

@@ -106,6 +106,29 @@ const SituationsGallery = () => {
           </Masonry>
         </ResponsiveMasonry>
 
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesSituations.Sails[19].src} alt="" />
+            <img src={ImagesSituations.Sails[20].src} alt="" />
+            <img src={ImagesSituations.Sails[21].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry>
+
+        
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+          className={styles.partOfgallery}
+        >
+          <Masonry gutter={gutter}>
+            <img src={ImagesSituations.Sails[22].src} alt="" />
+            <img src={ImagesSituations.Sails[23].src} alt="" />
+            <img src={ImagesSituations.Sails[24].src} alt="" />
+          </Masonry>
+        </ResponsiveMasonry>
+
         {/* <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
           className={styles.partOfgallery}
