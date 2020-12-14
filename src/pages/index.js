@@ -1,48 +1,24 @@
-import React from "react"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import { ParallaxProvider } from "react-scroll-parallax"
-import ScrollToTop from "react-router-scroll-top"
-import "../../fontello/css/fontello.css"
+import React, { useState, useEffect } from "react"
+import classnames from "classnames"
 
-import Home from "../pages/Home/Home"
-import About from "../pages/About/About"
-import Projects from "../pages/Projects/Projects"
-import Activities from "../components/MainGallery/ActivitiesGallery"
-import Travels from "./Projects/Gallery/Travels"
-import Themes from "./Projects/Gallery/Themes"
-import Cats from "./Projects/Gallery/Cats"
-import Polska from "./Projects/Gallery/Poland"
-import Mountains from "../pages/Projects/Gallery/Mountains"
+import styles from "./Home.module.scss"
+import OverviewMobile from "./Home/OverviewMobile"
+import OverviewDesktop from "./Home/OverviewDesktop"
+import Layout from "../components/layout"
 
-import BaseLayout from "./BaseLayout"
-import Situations from "./Projects/Gallery/Situations"
-
-function IndexPage() {
+const Home = () => {
   return (
-    <>
-      {" "}
-      <ParallaxProvider>
-        <Router>
-          <ScrollToTop>
-            <BaseLayout>
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/projects" component={Projects} />
-                <Route exact path="/mountains" component={Mountains} />
-                <Route exact path="/travels" component={Travels} />
-                <Route exact path="/cats" component={Cats} />
-                <Route exact path="/activities" component={Activities} />
-                <Route exact path="/poland" component={Polska} />
-                <Route exact path="/situations" component={Situations} />
-                <Route exact path="/themes" component={Themes} />
-              </Switch>
-            </BaseLayout>
-          </ScrollToTop>
-        </Router>
-      </ParallaxProvider>
-    </>
+    <Layout>
+      <div className={classnames(styles.homepage)}>
+        <div className={styles.displayMobile}>
+          <OverviewMobile />
+        </div>
+        <div className={styles.displayDesktop}>
+          <OverviewDesktop />
+        </div>
+      </div>
+    </Layout>
   )
 }
 
-export default IndexPage
+export default Home

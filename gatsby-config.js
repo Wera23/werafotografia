@@ -5,8 +5,34 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Wera Chodanionek Fotografia`,
+    description: `Portfolio fotograficzne Wery Chodanionek`,
+    author: `Wera Chodanionek`,
+  },
+
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/assets/images/wcp-logo.jpg`, // This path is relative to the root of the site.
+      },
+    },
     {
       resolve: `gatsby-plugin-sass`,
       loader: "sass-resources-loader",
@@ -14,6 +40,7 @@ module.exports = {
         cssLoaderOptions: {
           camelCase: false,
           resources: "./src/assets/styles/sass-resources.scss",
+         // data: `@import "${__dirname}/src/styles/sass-resources.scss";`,
         },
       },
     },
@@ -33,6 +60,5 @@ module.exports = {
         // For all the options check babel-plugin-react-css-modules README link provided above
       },
     },
-    
   ],
 }

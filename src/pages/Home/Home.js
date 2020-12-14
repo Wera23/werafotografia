@@ -3,17 +3,17 @@ import classnames from "classnames"
 
 //import Gallery from "../../components/MainGallery/MainGallery";
 import styles from "./Home.module.scss"
-import Overview from "./Overview"
-import Overview2 from "./Overview2"
+import OverviewMobile from "./OverviewMobile"
+import OverviewDesktop from "./OverviewDesktop"
 
 const Home = () => {
   return (
     <div className={classnames(styles.homepage)}>
     <div className={styles.displayMobile}>
-    <Overview />
+    <OverviewMobile />
     </div>
     <div className={styles.displayDesktop}>
-    <Overview2 />
+    <OverviewDesktop />
     </div>
      
     </div>

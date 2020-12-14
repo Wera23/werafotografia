@@ -32,7 +32,14 @@ import {
   Sails20,
   Sails23,
   Sails24,
-  Sails25
+  Sails25,
+  Husky5,
+  Husky6,
+  Husky7,
+  Husky8,
+  Husky9,
+  Husky10,
+  Husky11
 } from "./index"
 
 const ImagesSituations = {
@@ -66,6 +73,27 @@ const ImagesSituations = {
     },
     {
       src: Husky4,
+    },
+    {
+      src: Husky5,
+    },
+    {
+      src: Husky6,
+    },
+    {
+      src: Husky7,
+    },
+    {
+      src: Husky8,
+    },
+    {
+      src: Husky9,
+    },
+    {
+      src: Husky10,
+    },
+    {
+      src: Husky11,
     },
   ],
 

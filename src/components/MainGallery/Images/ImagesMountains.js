@@ -48,6 +48,8 @@ import {
   Mountains47,
   Mountains48,
   Mountains49,
+  Mountains50,
+  Mountains51,
 } from "./index"
 
 const ImagesMountains = [
@@ -197,6 +199,12 @@ const ImagesMountains = [
   },
   {
     src: Mountains49,
+  },
+  {
+    src: Mountains50,
+  },
+  {
+    src: Mountains51,
   },
 ]
 

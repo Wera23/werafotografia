@@ -71,11 +71,8 @@ export { default as Mountains46 } from "./mountains46.jpg"
 export { default as Mountains47 } from "./mountains47.jpg"
 export { default as Mountains48 } from "./mountains48.jpg"
 export { default as Mountains49 } from "./mountains49.jpg"
-
-
-
-
-
+export { default as Mountains50 } from "./mountains50.jpg"
+export { default as Mountains51 } from "./mountains51.jpg"
 
 
 export { default as Sea1 } from "./sea1.jpg"
@@ -117,7 +114,13 @@ export { default as Husky1 } from "./husky1.jpg"
 export { default as Husky2 } from "./husky2.jpg"
 export { default as Husky3 } from "./husky3.jpg"
 export { default as Husky4 } from "./husky4.jpg"
-
+export { default as Husky5 } from "./husky5.jpg"
+export { default as Husky6 } from "./husky6.jpg"
+export { default as Husky7 } from "./husky7.jpg"
+export { default as Husky8 } from "./husky8.jpg"
+export { default as Husky9 } from "./husky9.jpg"
+export { default as Husky10 } from "./husky10.jpg"
+export { default as Husky11 } from "./husky11.jpg"
 
 export { default as Sails1 } from "./zagle1.jpg"
 export { default as Sails2 } from "./zagle2.jpg"
