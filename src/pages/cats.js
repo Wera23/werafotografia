@@ -2,16 +2,18 @@ import React from "react"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import SEO from "../components/seo"
 
-import styles from "./Galleries.module.scss"
+import SEO from "../components/seo"
+import Layout from "../components/layout"
+
+import styles from "./galleries.module.scss"
 
 const CatsGallery = ({ data }) => {
   const gutter = "30px"
 
   return (
     <>
-      <SEO title={"Koty!"} />
+      <SEO title={"Koty"} />
       <Layout>
         <div className={styles.galleryCats}>
           <div className={styles.gallery}>

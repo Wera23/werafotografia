@@ -1,254 +1,599 @@
 import React from "react"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+import SEO from "../components/seo"
+import Layout from "../components/layout"
 
-// import { ImagesMountains, ImagesDiff, ImagesPlaces } from "../../../components"
+import styles from "./galleries.module.scss"
 
-import styles from "./Galleries.module.scss"
-
-const MountainsGallery = () => {
+const MountainsGallery = ({ data }) => {
   const gutter = "30px"
 
   return (
-    <div className={styles.galleryMountains}>
-      {/* <div className={styles.gallery}>
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[3].src} alt="" />
-            <img src={ImagesMountains[29].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+    <>
+      <SEO title={"Gory"} />
+      <Layout>
+        <div className={styles.galleryMountains}>
+          <div className={styles.gallery}>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains4.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains30.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[0].src} alt="" />
-            <img src={ImagesMountains[4].src} alt="" />
-            <img src={ImagesMountains[1].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains1.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains5.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains2.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[8].src} alt="" />
-            <img src={ImagesMountains[9].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains9.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains10.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[10].src} alt="" />
-            <img src={ImagesMountains[13].src} alt="" />
-            <img
-              className={styles.photoMobileHidden}
-              src={ImagesMountains[12].src}
-              alt=""
-            />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains11.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains14.childImageSharp.fluid} alt="" />
+                <Img
+                  className={styles.photoMobileHidden}
+                  fluid={data.mountains13.childImageSharp.fluid}
+                  alt=""
+                />
+              </Masonry>
+            </ResponsiveMasonry>
 
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains26.childImageSharp.fluid} alt="" />
+                <Img
+                  className={styles.photoMobileHidden}
+                  fluid={data.mountains25.childImageSharp.fluid}
+                  alt=""
+                />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[25].src} alt="" />
-            <img
-              className={styles.photoMobileHidden}
-              src={ImagesMountains[24].src}
-              alt=""
-            />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.diff1.childImageSharp.fluid} alt="" />
+                <Img fluid={data.diff2.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesDiff[0].src} alt="" />
-            <img src={ImagesDiff[1].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains18.childImageSharp.fluid} alt="" />
+                <Img
+                  className={styles.photoMobileHidden}
+                  fluid={data.mountains17.childImageSharp.fluid}
+                  alt=""
+                />
+                <Img fluid={data.mountains18.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[17].src} alt="" />
-            <img
-              className={styles.photoMobileHidden}
-              src={ImagesMountains[16].src}
-              alt=""
-            />
-            <img src={ImagesMountains[15].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains48.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains7.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[47].src} alt="" />
-            <img src={ImagesMountains[6].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img
+                  className={styles.photoMobileHidden}
+                  fluid={data.mountains8.childImageSharp.fluid}
+                  alt=""
+                />
+                <Img fluid={data.mountains20.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img
-              className={styles.photoMobileHidden}
-              src={ImagesMountains[7].src}
-              alt=""
-            />
-            <img src={ImagesMountains[19].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains21.childImageSharp.fluid} alt="" />
+                <Img fluid={data.diff11.childImageSharp.fluid} alt="" />
+                <Img
+                  className={styles.photoMobileHidden}
+                  fluid={data.mountains22.childImageSharp.fluid}
+                  alt=""
+                />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[20].src} alt="" />
-            <img src={ImagesDiff[10].src} alt="" />
-            <img
-              className={styles.photoMobileHidden}
-              src={ImagesMountains[21].src}
-              alt=""
-            />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.places8.childImageSharp.fluid} alt="" />
+                <Img fluid={data.places9.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesPlaces[7].src} alt="" />
-            <img src={ImagesPlaces[8].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.places10.childImageSharp.fluid} alt="" />
+                <Img
+                  className={styles.photoMobileHidden}
+                  fluid={data.places11.childImageSharp.fluid}
+                  alt=""
+                />
+                <Img
+                  className={styles.photoMobileHidden}
+                  fluid={data.places12.childImageSharp.fluid}
+                  alt=""
+                />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesPlaces[9].src} alt="" />
-            <img
-              className={styles.photoMobileHidden}
-              src={ImagesPlaces[10].src}
-              alt=""
-            />
-            <img
-              className={styles.photoMobileHidden}
-              src={ImagesPlaces[11].src}
-              alt=""
-            />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains33.childImageSharp.fluid} alt="" />
+                <Img fluid={data.places4.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[32].src} alt="" />
-            <img src={ImagesPlaces[3].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains27.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains29.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains32.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[26].src} alt="" />
-            <img src={ImagesMountains[28].src} alt="" />
-            <img src={ImagesMountains[31].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains34.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains35.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[33].src} alt="" />
-            <img src={ImagesMountains[34].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains36.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains38.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[35].src} alt="" />
-            <img src={ImagesMountains[37].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.diff7.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains37.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesDiff[6].src} alt="" />
-            <img src={ImagesMountains[36].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains43.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains42.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[42].src} alt="" />
-            <img src={ImagesMountains[41].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains44.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains45.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[43].src} alt="" />
-            <img src={ImagesMountains[44].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
-
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesMountains[49].src} alt="" />
-            <img src={ImagesMountains[50].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
-
-      </div> */}
-    </div>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains50.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains51.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+          </div>
+        </div>
+      </Layout>
+    </>
   )
 }
 
 export default MountainsGallery
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+
+export const query = graphql`
+  query {
+    mountains1: file(relativePath: { eq: "images/mountains/mountains1.jpg" }) {
+      ...fluidImage
+    }
+
+    mountains2: file(relativePath: { eq: "images/mountains/mountains2.jpg" }) {
+      ...fluidImage
+    }
+
+    mountains3: file(relativePath: { eq: "images/mountains/mountains3.jpg" }) {
+      ...fluidImage
+    }
+
+    mountains4: file(relativePath: { eq: "images/mountains/mountains4.jpg" }) {
+      ...fluidImage
+    }
+
+    mountains5: file(relativePath: { eq: "images/mountains/mountains5.jpg" }) {
+      ...fluidImage
+    }
+
+    mountains6: file(relativePath: { eq: "images/mountains/mountains6.jpg" }) {
+      ...fluidImage
+    }
+
+    mountains7: file(relativePath: { eq: "images/mountains/mountains7.jpg" }) {
+      ...fluidImage
+    }
+
+    mountains8: file(relativePath: { eq: "images/mountains/mountains8.jpg" }) {
+      ...fluidImage
+    }
+
+    mountains9: file(relativePath: { eq: "images/mountains/mountains9.jpg" }) {
+      ...fluidImage
+    }
+
+    mountains10: file(
+      relativePath: { eq: "images/mountains/mountains10.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains11: file(
+      relativePath: { eq: "images/mountains/mountains11.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains12: file(
+      relativePath: { eq: "images/mountains/mountains12.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains13: file(
+      relativePath: { eq: "images/mountains/mountains13.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains14: file(
+      relativePath: { eq: "images/mountains/mountains14.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains15: file(
+      relativePath: { eq: "images/mountains/mountains15.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains16: file(
+      relativePath: { eq: "images/mountains/mountains16.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains17: file(
+      relativePath: { eq: "images/mountains/mountains17.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains18: file(
+      relativePath: { eq: "images/mountains/mountains18.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains19: file(
+      relativePath: { eq: "images/mountains/mountains19.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains20: file(
+      relativePath: { eq: "images/mountains/mountains20.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains21: file(
+      relativePath: { eq: "images/mountains/mountains21.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains22: file(
+      relativePath: { eq: "images/mountains/mountains22.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains23: file(
+      relativePath: { eq: "images/mountains/mountains23.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains24: file(
+      relativePath: { eq: "images/mountains/mountains24.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains25: file(
+      relativePath: { eq: "images/mountains/mountains25.jpg" }
+    ) {
+      ...fluidImage
+    }
+    mountains26: file(
+      relativePath: { eq: "images/mountains/mountains26.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains27: file(
+      relativePath: { eq: "images/mountains/mountains27.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains28: file(
+      relativePath: { eq: "images/mountains/mountains28.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains29: file(
+      relativePath: { eq: "images/mountains/mountains29.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains30: file(
+      relativePath: { eq: "images/mountains/mountains30.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains31: file(
+      relativePath: { eq: "images/mountains/mountains31.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains32: file(
+      relativePath: { eq: "images/mountains/mountains32.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains33: file(
+      relativePath: { eq: "images/mountains/mountains33.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains34: file(
+      relativePath: { eq: "images/mountains/mountains34.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains35: file(
+      relativePath: { eq: "images/mountains/mountains35.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains36: file(
+      relativePath: { eq: "images/mountains/mountains36.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains37: file(
+      relativePath: { eq: "images/mountains/mountains37.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains38: file(
+      relativePath: { eq: "images/mountains/mountains38.jpg" }
+    ) {
+      ...fluidImage
+    }
+    mountains39: file(
+      relativePath: { eq: "images/mountains/mountains39.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains40: file(
+      relativePath: { eq: "images/mountains/mountains40.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains41: file(
+      relativePath: { eq: "images/mountains/mountains41.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains42: file(
+      relativePath: { eq: "images/mountains/mountains42.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains43: file(
+      relativePath: { eq: "images/mountains/mountains43.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains44: file(
+      relativePath: { eq: "images/mountains/mountains44.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains45: file(
+      relativePath: { eq: "images/mountains/mountains45.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains46: file(
+      relativePath: { eq: "images/mountains/mountains46.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains47: file(
+      relativePath: { eq: "images/mountains/mountains47.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains48: file(
+      relativePath: { eq: "images/mountains/mountains48.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains49: file(
+      relativePath: { eq: "images/mountains/mountains49.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains50: file(
+      relativePath: { eq: "images/mountains/mountains50.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains51: file(
+      relativePath: { eq: "images/mountains/mountains51.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    places4: file(relativePath: { eq: "images/places/places4.jpg" }) {
+      ...fluidImage
+    }
+
+    places8: file(relativePath: { eq: "images/places/places8.jpg" }) {
+      ...fluidImage
+    }
+
+    places9: file(relativePath: { eq: "images/places/places9.jpg" }) {
+      ...fluidImage
+    }
+
+    places10: file(relativePath: { eq: "images/places/places10.jpg" }) {
+      ...fluidImage
+    }
+
+    places11: file(relativePath: { eq: "images/places/places11.jpg" }) {
+      ...fluidImage
+    }
+
+    places12: file(relativePath: { eq: "images/places/places12.jpg" }) {
+      ...fluidImage
+    }
+
+    diff1: file(relativePath: { eq: "images/diff/dif1.jpg" }) {
+      ...fluidImage
+    }
+
+    diff2: file(relativePath: { eq: "images/diff/dif2.jpg" }) {
+      ...fluidImage
+    }
+
+    diff7: file(relativePath: { eq: "images/diff/dif7.jpg" }) {
+      ...fluidImage
+    }
+
+    diff11: file(relativePath: { eq: "images/diff/dif11.jpg" }) {
+      ...fluidImage
+    }
+  }
+`

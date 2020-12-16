@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import classnames from "classnames"
 
 import styles from "./layout.module.scss"
@@ -7,7 +6,7 @@ import styles from "./layout.module.scss"
 import { useDisplayNameScroll } from "../hooks/useDisplayName"
 
 const Layout = ({ children }) => {
-  const isDisplayName = useDisplayNameScroll()
+  // const isDisplayName = useDisplayNameScroll()
 
   return (
     <div className={styles.page}>
@@ -29,15 +28,15 @@ const Layout = ({ children }) => {
         <li className={styles.menuLi}>
           <i className={classnames("icon-paper-plane", styles.menuIcon)} />
           <a className={styles.menuLink} href="/about">
-            Informacja
+            Kontakt
           </a>
         </li>
       </ul>
       <div className={styles.pageTitle}>Wera Chodanionek</div>
 
-      {isDisplayName === true && (
+      {/* {isDisplayName === true && (
         <div className={styles.pageTitleScroll}>Wera Chodanionek</div>
-      )}
+      )} */}
 
       {children}
 

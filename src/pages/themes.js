@@ -1,42 +1,76 @@
 import React from "react"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
-// import ImagesMountains from "../../../components/MainGallery/Images/ImagesMountains"
-// import ImagesDiff from "../../../components/MainGallery/Images/ImagesDiff"
-// import ImagesPolska from "../../../components/MainGallery/Images/ImagesPolska"
+import SEO from "../components/seo"
+import Layout from "../components/layout"
 
-// import mainImagesPortugal from "../../../components/MainGallery/Images/MainImagesData"
+import styles from "./galleries.module.scss"
 
-import styles from "./Galleries.module.scss"
-
-const Themes = () => {
+const Themes = ({ data }) => {
   const gutter = "30px"
 
   return (
-    <div className={styles.galleryMountains}>
-      {/* <div className={styles.gallery}>
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={mainImagesPortugal[4].src} alt="" />
-            <img src={ImagesPolska.Nature[0].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
+    <>
+      <SEO title={"Tematy"} />
+      <Layout>
+        <div className={styles.galleryMountains}>
+          <div className={styles.gallery}>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.theme1.childImageSharp.fluid} alt="" />
+                <Img fluid={data.theme2.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
 
-        <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-          className={styles.partOfgallery}
-        >
-          <Masonry gutter={gutter}>
-            <img src={ImagesDiff[6].src} alt="" />
-            <img src={ImagesMountains[38].src} alt="" />
-          </Masonry>
-        </ResponsiveMasonry>
-      </div> */}
-    </div>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.theme3.childImageSharp.fluid} alt="" />
+                <Img fluid={data.theme4.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+          </div>
+        </div>
+      </Layout>
+    </>
   )
 }
 
 export default Themes
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+
+export const query = graphql`
+  query {
+    theme1: file(relativePath: { eq: "images/portugalia/portugalia5.jpg" }) {
+      ...fluidImage
+    }
+
+    theme2: file(relativePath: { eq: "images/polska/Polska1.jpg" }) {
+      ...fluidImage
+    }
+
+    theme3: file(relativePath: { eq: "images/diff/dif7.jpg" }) {
+      ...fluidImage
+    }
+
+    theme4: file(relativePath: { eq: "images/mountains/mountains39.jpg" }) {
+      ...fluidImage
+    }
+  }
+`

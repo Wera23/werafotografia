@@ -1,10 +1,10 @@
-import React from "react";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import ImagesSailing from "./Images/ImagesSailing";
-import "./MainGalleryImages.css";
+import React from "react"
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import ImagesSailing from "./Images/ImagesSailing"
+import "./MainGalleryImages.css"
 
 const SailingGallery = () => {
-  const gutter = "30px";
+  const gutter = "30px"
 
   return (
     <div className="gallery">
@@ -50,7 +50,7 @@ const SailingGallery = () => {
         </Masonry>
       </ResponsiveMasonry> */}
     </div>
-  );
-};
+  )
+}
 
-export default SailingGallery;
+export default SailingGallery
