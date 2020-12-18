@@ -20,7 +20,15 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaultQuality: 100,
+        //webQuality: 100,
+        //maxWidth: 1800,
+      },
+    },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -40,7 +48,7 @@ module.exports = {
         cssLoaderOptions: {
           camelCase: false,
           resources: "./src/assets/styles/sass-resources.scss",
-         // data: `@import "${__dirname}/src/styles/sass-resources.scss";`,
+          // data: `@import "${__dirname}/src/styles/sass-resources.scss";`,
         },
       },
     },

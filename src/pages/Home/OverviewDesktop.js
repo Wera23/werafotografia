@@ -32,7 +32,7 @@ const OverviewDesktop = ({ data }) => {
                 styles.overviewElName
               )}
             >
-              <h4>Natura</h4>
+              <h4>Naturaaaa</h4>
               <Img
                 className={styles.overviewImgSmall}
                 fluid={data.places4.childImageSharp.fluid}

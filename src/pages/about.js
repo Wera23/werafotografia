@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "./about.module.scss"
+import { graphql } from "gatsby"
 
 import Img from "gatsby-image"
 import SEO from "../components/seo"
