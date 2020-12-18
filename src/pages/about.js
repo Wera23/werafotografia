@@ -66,7 +66,7 @@ export const fluidImage = graphql`
 
 export const query = graphql`
   query {
-    portret1: file(relativePath: { eq: "images/cat/cat1.jpg" }) {
+    portret1: file(relativePath: { eq: "images/about/wera1.jpg" }) {
       ...fluidImage
     }
   }

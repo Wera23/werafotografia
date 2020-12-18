@@ -42,6 +42,7 @@
 .aboutPhoto {
   width: 40%;
   height: auto;
+  max-height: 100vh;
 }
 
 @media (max-width: 1200px) {

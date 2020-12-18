@@ -3,7 +3,7 @@ import classnames from "classnames"
 
 import styles from "./layout.module.scss"
 
-import { useDisplayNameScroll } from "../hooks/useDisplayName"
+//import { useDisplayNameScroll } from "../hooks/useDisplayName"
 
 const Layout = ({ children }) => {
   // const isDisplayName = useDisplayNameScroll()
