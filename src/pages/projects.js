@@ -4,7 +4,7 @@ import classnames from "classnames"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 
-import styles from "./Projects.module.scss"
+import styles from "./projects.module.scss"
 
 const Projects = () => {
   return (

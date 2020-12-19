@@ -43,7 +43,7 @@ const TravelGallery = ({ data }) => {
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.portugalia7.childImageSharp.fluid} alt="" />
-                <Img fluid={data.portugalia6.childImageSharp.fluid} alt="" />
+                <Img fluid={data.portugalia23.childImageSharp.fluid} alt="" />
                 <Img fluid={data.portugalia8.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
@@ -54,7 +54,7 @@ const TravelGallery = ({ data }) => {
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.portugalia9.childImageSharp.fluid} alt="" />
-                <Img fluid={data.portugalia10.childImageSharp.fluid} alt="" />
+                <Img fluid={data.portugalia14.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -63,13 +63,13 @@ const TravelGallery = ({ data }) => {
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
-                <Img fluid={data.portugalia16.childImageSharp.fluid} alt="" />
+                <Img fluid={data.portugalia11.childImageSharp.fluid} alt="" />
                 <Img
                   className={styles.photoMobileHidden}
                   fluid={data.portugalia12.childImageSharp.fluid}
                   alt=""
                 />
-                <Img fluid={data.portugalia13.childImageSharp.fluid} alt="" />
+                <Img fluid={data.portugalia10.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -94,6 +94,20 @@ const TravelGallery = ({ data }) => {
                   alt=""
                 />
                 <Img fluid={data.portugalia21.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img
+                  className={styles.photoMobileHidden}
+                  fluid={data.portugalia25.childImageSharp.fluid}
+                  alt=""
+                />
+                <Img fluid={data.portugalia24.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -356,6 +370,36 @@ export const query = graphql`
 
     portugalia21: file(
       relativePath: { eq: "images/portugalia/portugalia21.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    portugalia22: file(
+      relativePath: { eq: "images/portugalia/portugalia22.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    portugalia23: file(
+      relativePath: { eq: "images/portugalia/portugalia23.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    portugalia24: file(
+      relativePath: { eq: "images/portugalia/portugalia24.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    portugalia25: file(
+      relativePath: { eq: "images/portugalia/portugalia25.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    portugalia26: file(
+      relativePath: { eq: "images/portugalia/portugalia26.jpg" }
     ) {
       ...fluidImage
     }
