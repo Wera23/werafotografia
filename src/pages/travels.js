@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import styles from "./galleries.module.scss"
+import styles from "./Galleries.module.scss"
 
 const TravelGallery = ({ data }) => {
   const gutter = "30px"
