@@ -54,10 +54,13 @@ img {
 
 @media (max-width: 768px) {
   .gallery {
-    padding-top: 0px;
+    margin: 0 !important;
+    padding: 0 !important;
   }
+
   .photoMobileHidden {
     display: none;
+    height: 0;
     margin: 0 !important;
     padding: 0 !important;
   }

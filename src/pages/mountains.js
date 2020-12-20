@@ -97,7 +97,7 @@ const MountainsGallery = ({ data }) => {
                   fluid={data.mountains17.childImageSharp.fluid}
                   alt=""
                 />
-                <Img fluid={data.mountains18.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains19.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 

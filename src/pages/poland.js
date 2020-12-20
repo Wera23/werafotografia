@@ -17,6 +17,28 @@ const PolskaGallery = ({ data }) => {
       <Layout>
         <div className={styles.galleryPoland}>
           <div className={styles.gallery}>
+
+
+          <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.polska14.childImageSharp.fluid} alt="" />
+                <Img fluid={data.polska15.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.polska16.childImageSharp.fluid} alt="" />
+                <Img fluid={data.polska17.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+   
+
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
               className={styles.partOfgallery}
@@ -270,6 +292,22 @@ export const query = graphql`
     }
 
     polska13: file(relativePath: { eq: "images/polska/Polska13.jpg" }) {
+      ...fluidImage
+    }
+
+    polska14: file(relativePath: { eq: "images/polska/Polska14.jpg" }) {
+      ...fluidImage
+    }
+
+    polska15: file(relativePath: { eq: "images/polska/Polska15.jpg" }) {
+      ...fluidImage
+    }
+
+    polska16: file(relativePath: { eq: "images/polska/Polska16.jpg" }) {
+      ...fluidImage
+    }
+
+    polska17: file(relativePath: { eq: "images/polska/Polska17.jpg" }) {
       ...fluidImage
     }
 
