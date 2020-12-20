@@ -279,19 +279,17 @@ const Home = ({ data }) => {
                 </div>
               </div>
 
-
               <div className={styles.HPGallery}>
                 <ResponsiveMasonry
                   columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
                   className={styles.partOfgallery}
                 >
                   <Masonry gutter={gutter}>
-                  <Img fluid={data.polska14.childImageSharp.fluid} alt="" />
-                  <Img fluid={data.polska16.childImageSharp.fluid} alt="" />
+                    <Img fluid={data.polska14.childImageSharp.fluid} alt="" />
+                    <Img fluid={data.polska16.childImageSharp.fluid} alt="" />
                   </Masonry>
                 </ResponsiveMasonry>
               </div>
-
             </div>
           </div>
 
@@ -443,6 +441,40 @@ const Home = ({ data }) => {
                 className={styles.imageMobile}
                 alt=""
               />
+            </div>
+          </div>
+
+          <div className={styles.homepageSeeMore}>
+            <h2>
+              Zobacz galerie
+              <i
+                className={classnames(
+                  "icon-pagelines",
+                  styles.homepageSeeMoreIcon
+                )}
+              />
+            </h2>
+
+            <div className={styles.homepageSeeGaleries}>
+              <a href="/mountains" className={styles.homepageSeeMoreElement}>
+                Góry
+              </a>
+
+              <a className={styles.homepageSeeMoreElement} href="/travels">
+                Podróże
+              </a>
+
+              <a className={styles.homepageSeeMoreElement} href="/cats">
+                Koty
+              </a>
+
+              <a className={styles.homepageSeeMoreElement} href="/poland">
+                Polska
+              </a>
+
+              <a className={styles.homepageSeeMoreElement} href="/situations">
+                Sytuacje
+              </a>
             </div>
           </div>
         </div>

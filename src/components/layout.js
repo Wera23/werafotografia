@@ -32,7 +32,9 @@ const Layout = ({ children }) => {
           </a>
         </li>
       </ul>
-      <div className={styles.pageTitle}>Wera Chodanionek</div>
+      <a href="/" className={styles.pageTitle}>
+        Wera Chodanionek
+      </a>
 
       {/* {isDisplayName === true && (
         <div className={styles.pageTitleScroll}>Wera Chodanionek</div>
