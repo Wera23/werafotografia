@@ -75,7 +75,7 @@ const SituationsGallery = ({ data }) => {
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
-                <Img fluid={data.teatr3.childImageSharp.fluid} alt="" />
+                <Img fluid={data.teatr5.childImageSharp.fluid} alt="" />
                 <Img fluid={data.teatr4.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
@@ -166,6 +166,32 @@ const SituationsGallery = ({ data }) => {
                 <Img fluid={data.zagle5.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
+
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mdk2.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mdk7.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mdk3.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mdk4.childImageSharp.fluid} alt="" />
+
+                <Img fluid={data.mdk8.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mdk9.childImageSharp.fluid} alt="" />
+              
+              </Masonry>
+            </ResponsiveMasonry>
+
           </div>
         </div>
       </Layout>
@@ -240,10 +266,6 @@ export const query = graphql`
       ...fluidImage
     }
     teatr4: file(relativePath: { eq: "images/teatr/teatr4.jpg" }) {
-      ...fluidImage
-    }
-
-    teatr5: file(relativePath: { eq: "images/teatr/teatr5.jpg" }) {
       ...fluidImage
     }
 
@@ -337,6 +359,33 @@ export const query = graphql`
       ...fluidImage
     }
     zagle26: file(relativePath: { eq: "images/zagle/zagle26.jpg" }) {
+      ...fluidImage
+    }
+
+    mdk1: file(relativePath: { eq: "images/mdk/mdk1.jpg" }) {
+      ...fluidImage
+    }
+    mdk2: file(relativePath: { eq: "images/mdk/mdk2.jpg" }) {
+      ...fluidImage
+    }
+    mdk3: file(relativePath: { eq: "images/mdk/mdk3.jpg" }) {
+      ...fluidImage
+    }
+    mdk4: file(relativePath: { eq: "images/mdk/mdk4.jpg" }) {
+      ...fluidImage
+    }
+    mdk5: file(relativePath: { eq: "images/mdk/mdk5.jpg" }) {
+      ...fluidImage
+    }
+    mdk6: file(relativePath: { eq: "images/mdk/mdk6.jpg" }) {
+      ...fluidImage
+    }
+    mdk7: file(relativePath: { eq: "images/mdk/mdk7.jpg" }) {
+      ...fluidImage
+    }  mdk8: file(relativePath: { eq: "images/mdk/mdk8.jpg" }) {
+      ...fluidImage
+    }
+    mdk9: file(relativePath: { eq: "images/mdk/mdk9.jpg" }) {
       ...fluidImage
     }
   }

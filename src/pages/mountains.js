@@ -1,5 +1,8 @@
 import React from "react"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import classnames from "classnames"
+
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
@@ -67,7 +70,7 @@ const MountainsGallery = ({ data }) => {
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
-                <Img fluid={data.mountains26.childImageSharp.fluid} alt="" />
+                <Img  fluid={data.mountains26.childImageSharp.fluid} alt="" />
                 <Img
                   className={styles.photoMobileHidden}
                   fluid={data.mountains25.childImageSharp.fluid}
@@ -88,16 +91,16 @@ const MountainsGallery = ({ data }) => {
 
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
+              className={classnames(styles.partOfgallery, styles.photoMobileHidden)}
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.mountains18.childImageSharp.fluid} alt="" />
                 <Img
-                  className={styles.photoMobileHidden}
+                 
                   fluid={data.mountains17.childImageSharp.fluid}
                   alt=""
                 />
-                <Img fluid={data.mountains19.childImageSharp.fluid} alt="" />
+                <Img  fluid={data.mountains19.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -127,7 +130,8 @@ const MountainsGallery = ({ data }) => {
 
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
+              className={classnames(styles.partOfgallery, styles.photoMobileBottom0)}
+
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.mountains21.childImageSharp.fluid} alt="" />
@@ -142,7 +146,8 @@ const MountainsGallery = ({ data }) => {
 
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
+              className={classnames(styles.partOfgallery, styles.photoMobileTop0)}
+
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.places8.childImageSharp.fluid} alt="" />
