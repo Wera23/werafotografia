@@ -25,6 +25,52 @@ const Home = ({ data }) => {
                 <div className={styles.overviewElement}>
                   <Img
                     className={styles.overviewImg100H}
+                    fluid={data.zagle19.childImageSharp.fluid}
+                    alt=""
+                  />
+                </div>
+
+                <div
+                  className={classnames(
+                    styles.overviewElement,
+                    styles.overviewElName
+                  )}
+                >
+                  <h4>Żeglarstwo</h4>
+                  <Img
+                    className={styles.overviewImgSmall}
+                    fluid={data.zagle18.childImageSharp.fluid}
+                    alt=""
+                  />
+                </div>
+              </div>
+
+            
+             
+              <div className={styles.HPGallery}>
+                <ResponsiveMasonry
+                  columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+                  className={styles.partOfgallery}
+                >
+                  <Masonry gutter={gutter}>
+                    <Img
+                      fluid={data.mountains44.childImageSharp.fluid}
+                      alt=""
+                    />
+                    <Img
+                      fluid={data.mountains48.childImageSharp.fluid}
+                      alt=""
+                    />
+                  </Masonry>
+                </ResponsiveMasonry>
+              </div>
+
+
+
+              <div className={styles.overviewScreen}>
+                <div className={styles.overviewElement}>
+                  <Img
+                    className={styles.overviewImg100H}
                     fluid={data.diff12.childImageSharp.fluid}
                     alt=""
                   />
@@ -44,6 +90,35 @@ const Home = ({ data }) => {
                 </div>
               </div>
 
+              <div
+                className={classnames(
+                  styles.overviewScreen,
+                  styles.overviewElmPadding
+                )}
+              >
+                <div
+                  className={classnames(
+                    styles.overviewElement,
+                    styles.overviewElName
+                  )}
+                >
+                  <h4>Podróże</h4>
+                  <Img
+                    className={styles.overviewImgSmall}
+                    fluid={data.macedonia1.childImageSharp.fluid}
+                    alt=""
+                  />
+                </div>
+
+                <div className={styles.overviewElement}>
+                  <Img
+                    className={styles.overviewImg100H}
+                    fluid={data.portugalia3.childImageSharp.fluid}
+                    alt=""
+                  />
+                </div>
+              </div>
+
               <div className={styles.HPGallery}>
                 <ResponsiveMasonry
                   columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
@@ -51,16 +126,27 @@ const Home = ({ data }) => {
                 >
                   <Masonry gutter={gutter}>
                     <Img
-                      fluid={data.mountains44.childImageSharp.fluid}
+                      fluid={data.portugalia21.childImageSharp.fluid}
                       alt=""
                     />
-                    <Img
-                      fluid={data.mountains48.childImageSharp.fluid}
-                      alt=""
-                    />
+                    <Img fluid={data.macedonia2.childImageSharp.fluid} alt="" />
                   </Masonry>
                 </ResponsiveMasonry>
               </div>
+
+              <div className={styles.HPGallery}>
+                <ResponsiveMasonry
+                  columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+                  className={styles.partOfgallery}
+                >
+                  <Masonry gutter={gutter}>
+                    <Img fluid={data.macedonia6.childImageSharp.fluid} alt="" />
+                    <Img fluid={data.macedonia7.childImageSharp.fluid} alt="" />
+                  </Masonry>
+                </ResponsiveMasonry>
+              </div>
+
+
 
               <div className={styles.overviewScreen}>
                 <div
@@ -170,86 +256,6 @@ const Home = ({ data }) => {
                 </ResponsiveMasonry>
               </div>
 
-              <div className={styles.overviewScreen}>
-                <div className={styles.overviewElement}>
-                  <Img
-                    className={styles.overviewImg100H}
-                    fluid={data.zagle19.childImageSharp.fluid}
-                    alt=""
-                  />
-                </div>
-
-                <div
-                  className={classnames(
-                    styles.overviewElement,
-                    styles.overviewElName
-                  )}
-                >
-                  <h4>Żeglarstwo</h4>
-                  <Img
-                    className={styles.overviewImgSmall}
-                    fluid={data.zagle18.childImageSharp.fluid}
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <div
-                className={classnames(
-                  styles.overviewScreen,
-                  styles.overviewElmPadding
-                )}
-              >
-                <div
-                  className={classnames(
-                    styles.overviewElement,
-                    styles.overviewElName
-                  )}
-                >
-                  <h4>Podróże</h4>
-                  <Img
-                    className={styles.overviewImgSmall}
-                    fluid={data.macedonia1.childImageSharp.fluid}
-                    alt=""
-                  />
-                </div>
-
-                <div className={styles.overviewElement}>
-                  <Img
-                    className={styles.overviewImg100H}
-                    fluid={data.portugalia3.childImageSharp.fluid}
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <div className={styles.HPGallery}>
-                <ResponsiveMasonry
-                  columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-                  className={styles.partOfgallery}
-                >
-                  <Masonry gutter={gutter}>
-                    <Img
-                      fluid={data.portugalia21.childImageSharp.fluid}
-                      alt=""
-                    />
-                    <Img fluid={data.macedonia2.childImageSharp.fluid} alt="" />
-                  </Masonry>
-                </ResponsiveMasonry>
-              </div>
-
-              <div className={styles.HPGallery}>
-                <ResponsiveMasonry
-                  columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-                  className={styles.partOfgallery}
-                >
-                  <Masonry gutter={gutter}>
-                    <Img fluid={data.macedonia6.childImageSharp.fluid} alt="" />
-                    <Img fluid={data.macedonia7.childImageSharp.fluid} alt="" />
-                  </Masonry>
-                </ResponsiveMasonry>
-              </div>
-
               <div
                 className={classnames(
                   styles.overviewScreen,
@@ -295,6 +301,16 @@ const Home = ({ data }) => {
 
           <div className={styles.displayMobile}>
             <div className={styles.overviewFull}>
+              <Img
+                fluid={data.mountains48.childImageSharp.fluid}
+                className={styles.imageMobile}
+                alt=""
+              />
+              <Img
+                fluid={data.mountains20.childImageSharp.fluid}
+                className={styles.imageMobile}
+                alt=""
+              />
               <Img
                 fluid={data.places4.childImageSharp.fluid}
                 className={styles.imageMobile}
@@ -342,16 +358,6 @@ const Home = ({ data }) => {
               />
               <Img
                 fluid={data.macedonia7.childImageSharp.fluid}
-                className={styles.imageMobile}
-                alt=""
-              />
-              <Img
-                fluid={data.mountains48.childImageSharp.fluid}
-                className={styles.imageMobile}
-                alt=""
-              />
-              <Img
-                fluid={data.mountains20.childImageSharp.fluid}
                 className={styles.imageMobile}
                 alt=""
               />
