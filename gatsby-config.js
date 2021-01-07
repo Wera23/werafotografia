@@ -53,6 +53,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "G-7XF9FQMLK2",
+      },
+    },
+    {
       resolve: `gatsby-plugin-react-css-modules`,
       options: {
         // *.css files are included by default.
