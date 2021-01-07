@@ -31,7 +31,32 @@ const Layout = ({ children }) => {
             Kontakt
           </a>
         </li>
+
+        <li className={styles.menuLi}>
+          <a
+            className={styles.menuLink}
+            href="https://www.instagram.com/werachodanionek/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className={classnames("icon-instagram", styles.menuIcon)} />
+          </a>
+        </li>
+
+        <li className={styles.menuLi}>
+          <a
+            className={styles.menuLink}
+            href="https://www.facebook.com/profile.php?id=100008104848404"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              className={classnames("icon-facebook-circled", styles.menuIcon)}
+            />
+          </a>
+        </li>
       </ul>
+
       <a href="/" className={styles.pageTitle}>
         Wera Chodanionek
       </a>
