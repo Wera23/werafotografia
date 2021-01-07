@@ -9,7 +9,7 @@ import styles from "./projects.module.scss"
 const Projects = () => {
   return (
     <>
-      <SEO title={"Projekty"} />
+      <SEO title={"Wera Chodanionek Fotografia"} />
       <Layout>
         <div className={styles.projects}>
           <div className={styles.projectEl}>

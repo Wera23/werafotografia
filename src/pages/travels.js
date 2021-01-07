@@ -12,7 +12,7 @@ const TravelGallery = ({ data }) => {
 
   return (
     <>
-      <SEO title={"Podróże"} />
+      <SEO title={"Wera Chodanionek Fotografia: Podróże"} />
       <Layout>
         <div className={styles.galleryTravels}>
           <div className={styles.gallery}>

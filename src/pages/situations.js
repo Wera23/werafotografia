@@ -14,7 +14,7 @@ const SituationsGallery = ({ data }) => {
 
   return (
     <>
-      <SEO title={"Akcja"} />
+      <SEO title={"Wera Chodanionek Fotografia: Akcje"} />
       <Layout>
         <div className={styles.galleryCats}>
           <div className={styles.gallery}>

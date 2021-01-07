@@ -13,7 +13,7 @@ const Themes = ({ data }) => {
 
   return (
     <>
-      <SEO title={"Tematy"} />
+      <SEO title={"Wera Chodanionek Fotografia"} />
       <Layout>
         <div className={styles.galleryMountains}>
           <div className={styles.gallery}>

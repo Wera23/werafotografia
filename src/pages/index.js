@@ -16,7 +16,7 @@ const Home = ({ data }) => {
 
   return (
     <>
-      <SEO title={"Portfolio fotograficzne"} />
+      <SEO title={"Wera Chodanionek Fotografia"} />
       <Layout>
         <div className={classnames(styles.homepage)}>
           <div className={styles.displayDesktop}>
@@ -53,8 +53,12 @@ const Home = ({ data }) => {
                   className={styles.partOfgallery}
                 >
                   <Masonry gutter={gutter}>
-                    <Img
+                    {/* <Img
                       fluid={data.mountains44.childImageSharp.fluid}
+                      alt=""
+                    /> */}
+                     <Img
+                      fluid={data.mountains52.childImageSharp.fluid}
                       alt=""
                     />
                     <Img
@@ -579,6 +583,12 @@ export const query = graphql`
 
     mountains48: file(
       relativePath: { eq: "images/mountains/mountains48.jpg" }
+    ) {
+      ...fluidImage
+    }
+    
+    mountains52: file(
+      relativePath: { eq: "images/mountains/mountains52.jpg" }
     ) {
       ...fluidImage
     }

@@ -13,7 +13,7 @@ const PolskaGallery = ({ data }) => {
 
   return (
     <>
-      <SEO title={"Kadry z Polski"} />
+      <SEO title={"Wera Chodanionek Fotografia: Kadry z Polski"} />
       <Layout>
         <div className={styles.galleryPoland}>
           <div className={styles.gallery}>

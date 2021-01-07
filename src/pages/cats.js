@@ -13,7 +13,7 @@ const CatsGallery = ({ data }) => {
 
   return (
     <>
-      <SEO title={"Koty"} />
+      <SEO title={"Wera Chodanionek Fotografia: Koty"} />
       <Layout>
         <div className={styles.galleryCats}>
           <div className={styles.gallery}>

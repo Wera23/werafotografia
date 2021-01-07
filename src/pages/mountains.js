@@ -15,7 +15,7 @@ const MountainsGallery = ({ data }) => {
 
   return (
     <>
-      <SEO title={"Gory"} />
+      <SEO title={"Wera Chodanionek Fotografia: Góry"} />
       <Layout>
         <div className={styles.galleryMountains}>
           <div className={styles.gallery}>
@@ -25,7 +25,7 @@ const MountainsGallery = ({ data }) => {
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.mountains4.childImageSharp.fluid} alt="" />
-                <Img fluid={data.mountains30.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains52.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -246,12 +246,13 @@ const MountainsGallery = ({ data }) => {
             </ResponsiveMasonry>
 
             <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.mountains50.childImageSharp.fluid} alt="" />
                 <Img fluid={data.mountains51.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains30.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
           </div>
@@ -557,6 +558,12 @@ export const query = graphql`
 
     mountains51: file(
       relativePath: { eq: "images/mountains/mountains51.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains52: file(
+      relativePath: { eq: "images/mountains/mountains52.jpg" }
     ) {
       ...fluidImage
     }
