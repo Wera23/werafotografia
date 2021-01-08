@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
-        defaultQuality: 100,
+        defaultQuality: 85,
         //webQuality: 100,
         //maxWidth: 1800,
       },
