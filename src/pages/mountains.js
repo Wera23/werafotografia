@@ -221,7 +221,7 @@ const MountainsGallery = ({ data }) => {
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.diff7.childImageSharp.fluid} alt="" />
-                <Img fluid={data.mountains37.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains53.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -253,6 +253,16 @@ const MountainsGallery = ({ data }) => {
                 <Img fluid={data.mountains50.childImageSharp.fluid} alt="" />
                 <Img fluid={data.mountains51.childImageSharp.fluid} alt="" />
                 <Img fluid={data.mountains30.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains54.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains55.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
           </div>
@@ -564,6 +574,24 @@ export const query = graphql`
 
     mountains52: file(
       relativePath: { eq: "images/mountains/mountains52.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains53: file(
+      relativePath: { eq: "images/mountains/mountains53.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains54: file(
+      relativePath: { eq: "images/mountains/mountains54.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains55: file(
+      relativePath: { eq: "images/mountains/mountains55.jpg" }
     ) {
       ...fluidImage
     }

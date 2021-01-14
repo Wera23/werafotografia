@@ -21,32 +21,6 @@ const Home = ({ data }) => {
         <div className={classnames(styles.homepage)}>
           <div className={styles.displayDesktop}>
             <div className={styles.overviewFull}>
-              <div className={styles.overviewScreen}>
-                <div className={styles.overviewElement}>
-                  <Img
-                    className={styles.overviewImg100H}
-                    fluid={data.zagle19.childImageSharp.fluid}
-                    alt=""
-                  />
-                </div>
-
-                <div
-                  className={classnames(
-                    styles.overviewElement,
-                    styles.overviewElName
-                  )}
-                >
-                  <h4>Żeglarstwo</h4>
-                  <Img
-                    className={styles.overviewImgSmall}
-                    fluid={data.zagle18.childImageSharp.fluid}
-                    alt=""
-                  />
-                </div>
-              </div>
-
-            
-             
               <div className={styles.HPGallery}>
                 <ResponsiveMasonry
                   columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
@@ -57,7 +31,7 @@ const Home = ({ data }) => {
                       fluid={data.mountains44.childImageSharp.fluid}
                       alt=""
                     /> */}
-                     <Img
+                    <Img
                       fluid={data.mountains52.childImageSharp.fluid}
                       alt=""
                     />
@@ -68,8 +42,6 @@ const Home = ({ data }) => {
                   </Masonry>
                 </ResponsiveMasonry>
               </div>
-
-
 
               <div className={styles.overviewScreen}>
                 <div className={styles.overviewElement}>
@@ -150,8 +122,6 @@ const Home = ({ data }) => {
                 </ResponsiveMasonry>
               </div>
 
-
-
               <div className={styles.overviewScreen}>
                 <div
                   className={classnames(
@@ -181,8 +151,14 @@ const Home = ({ data }) => {
                   className={styles.partOfgallery}
                 >
                   <Masonry gutter={gutter}>
-                    <Img fluid={data.cat10.childImageSharp.fluid} alt="" />
-                    <Img fluid={data.cat13.childImageSharp.fluid} alt="" />
+                    <Img
+                      fluid={data.mountains35.childImageSharp.fluid}
+                      alt=""
+                    />
+                    <Img
+                      fluid={data.mountains38.childImageSharp.fluid}
+                      alt=""
+                    />
                   </Masonry>
                 </ResponsiveMasonry>
               </div>
@@ -284,6 +260,30 @@ const Home = ({ data }) => {
                   <Img
                     className={styles.overviewImgSmall}
                     fluid={data.polska2.childImageSharp.fluid}
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div className={styles.overviewScreen}>
+                <div className={styles.overviewElement}>
+                  <Img
+                    className={styles.overviewImg100H}
+                    fluid={data.zagle19.childImageSharp.fluid}
+                    alt=""
+                  />
+                </div>
+
+                <div
+                  className={classnames(
+                    styles.overviewElement,
+                    styles.overviewElName
+                  )}
+                >
+                  <h4>Żeglarstwo</h4>
+                  <Img
+                    className={styles.overviewImgSmall}
+                    fluid={data.zagle18.childImageSharp.fluid}
                     alt=""
                   />
                 </div>
@@ -575,6 +575,18 @@ export const query = graphql`
       ...fluidImage
     }
 
+    mountains35: file(
+      relativePath: { eq: "images/mountains/mountains35.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains38: file(
+      relativePath: { eq: "images/mountains/mountains38.jpg" }
+    ) {
+      ...fluidImage
+    }
+
     mountains44: file(
       relativePath: { eq: "images/mountains/mountains44.jpg" }
     ) {
@@ -586,7 +598,7 @@ export const query = graphql`
     ) {
       ...fluidImage
     }
-    
+
     mountains52: file(
       relativePath: { eq: "images/mountains/mountains52.jpg" }
     ) {

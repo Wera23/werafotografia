@@ -7,42 +7,70 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(236, 236, 235);
+  background-color: #eee9e2;
+  //background-color: rgb(236, 236, 235);
+}
+
+.aboutInside{
+  width: 65vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutContent {
   display: flex;
-  width: 60vw;
+  flex: 1;
+  height: auto;
 }
 
 .aboutDescripion {
-  flex: 2;
+ // flex: 2;
+ height: auto;
+
+}
+
+.aboutSocial{
+  margin-top: 30px;
+}
+
+.aboutSocialIcon{
+  margin-left: 10px;
+  font-size: 20px;
 }
 
 .aboutDescripion p {
-  margin-left: 50px;
+ // margin-left: 50px;
+ margin: 20px 0;
+ width: 75%;
 }
 
-.aboutContact {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+// .aboutContact {
+//   flex: 1;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
 
-.aboutContactInside {
-  display: flex;
-  flex-direction: column;
-}
-
-.aboutContact a {
+.aboutInfContact{
+  font-weight: bolder;
   text-decoration: none;
+ // padding-bottom: 15px;
 }
+
+// .aboutContactInside {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .aboutContact a {
+//   text-decoration: none;
+// }
 
 .aboutPhoto {
-  width: 40%;
+  width: 80%;
   height: auto;
-  max-height: 100vh;
+  max-height: 70vh;
 }
 
 @media (max-width: 1200px) {
