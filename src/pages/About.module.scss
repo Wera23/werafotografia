@@ -1,21 +1,22 @@
+@mixin cenralize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .about {
+  @include cenralize;
+  width: 100vw;
   min-height: 100vh;
   height: 100%;
   overflow: hidden;
-  width: 100vw;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #eee9e2;
-  //background-color: rgb(236, 236, 235);
 }
 
-.aboutInside{
+.aboutInside {
   width: 65vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include cenralize;
 }
 
 .aboutContent {
@@ -25,47 +26,27 @@
 }
 
 .aboutDescripion {
- // flex: 2;
- height: auto;
-
+  height: auto;
 }
 
-.aboutSocial{
+.aboutSocial {
   margin-top: 30px;
 }
 
-.aboutSocialIcon{
+.aboutSocialIcon {
   margin-left: 10px;
   font-size: 20px;
 }
 
 .aboutDescripion p {
- // margin-left: 50px;
- margin: 20px 0;
- width: 75%;
+  margin: 20px 0;
+  width: 75%;
 }
 
-// .aboutContact {
-//   flex: 1;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-.aboutInfContact{
+.aboutInfContact {
   font-weight: bolder;
   text-decoration: none;
- // padding-bottom: 15px;
 }
-
-// .aboutContactInside {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .aboutContact a {
-//   text-decoration: none;
-// }
 
 .aboutPhoto {
   width: 80%;
@@ -74,25 +55,35 @@
 }
 
 @media (max-width: 1200px) {
-  .aboutContent {
+  .aboutInside {
+    flex-direction: column-reverse;
     width: 70vw;
-    padding: 0 50px;
+  }
+
+  .aboutContent {
+    width: 100%;
     flex-direction: column;
-    align-items: flex-start !important;
+    align-items: flex-start
   }
 
   .aboutDescripion p {
     margin-left: 0px;
+    width: 100%;
+  }
+  .aboutDescripion {
+  margin-top: 150px;
   }
 
-  .aboutDescripion {
-    width: 100%;
-    padding-top: 30px;
-  }
+
 
   .aboutContact {
     padding-top: 30px;
   }
+
+  .aboutSocial {
+    margin-bottom: 30px;
+  }
+  
 }
 
 @media (max-width: 900px) {
@@ -100,6 +91,10 @@
     flex-direction: column-reverse;
   }
 
+  .aboutInside {
+    width: 85vw;
+  }
+  
   .aboutContact {
     padding-bottom: 30px;
   }
@@ -111,7 +106,7 @@
 }
 
 @media (max-width: 768px) {
-  .aboutContent {
-    width: 95vw;
+  .aboutInside {
+    width: 90vw;
   }
 }

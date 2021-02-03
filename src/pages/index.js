@@ -453,40 +453,6 @@ const Home = ({ data }) => {
               />
             </div>
           </div>
-
-          <div className={styles.homepageSeeMore}>
-            <h2>
-              Zobacz galerie
-              <i
-                className={classnames(
-                  "icon-pagelines",
-                  styles.homepageSeeMoreIcon
-                )}
-              />
-            </h2>
-
-            <div className={styles.homepageSeeGaleries}>
-              <a href="/mountains" className={styles.homepageSeeMoreElement}>
-                Góry
-              </a>
-
-              <a className={styles.homepageSeeMoreElement} href="/travels">
-                Podróże
-              </a>
-
-              <a className={styles.homepageSeeMoreElement} href="/cats">
-                Koty
-              </a>
-
-              <a className={styles.homepageSeeMoreElement} href="/poland">
-                Polska
-              </a>
-
-              <a className={styles.homepageSeeMoreElement} href="/situations">
-                Sytuacje
-              </a>
-            </div>
-          </div>
         </div>
       </Layout>
     </>

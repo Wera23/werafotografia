@@ -3,11 +3,7 @@ import classnames from "classnames"
 
 import styles from "./layout.module.scss"
 
-//import { useDisplayNameScroll } from "../hooks/useDisplayName"
-
 const Layout = ({ children }) => {
-  // const isDisplayName = useDisplayNameScroll()
-
   return (
     <div className={styles.page}>
       <ul className={styles.menu}>
@@ -61,11 +57,71 @@ const Layout = ({ children }) => {
         Wera Chodanionek
       </a>
 
-      {/* {isDisplayName === true && (
-        <div className={styles.pageTitleScroll}>Wera Chodanionek</div>
-      )} */}
-
       {children}
+
+      <div className={styles.layoutLegend}>
+        <div className={styles.layoutSeeMore}>
+          <h2>
+            Zobacz galerie
+            <i
+              className={classnames("icon-pagelines", styles.layoutSeeMoreIcon)}
+            />
+          </h2>
+
+          <div className={styles.layoutSeeGaleries}>
+            <a href="/mountains" className={styles.layoutSeeMoreElement}>
+              Góry
+            </a>
+
+            <a className={styles.layoutSeeMoreElement} href="/travels">
+              Podróże
+            </a>
+
+            <a className={styles.layoutSeeMoreElement} href="/cats">
+              Koty
+            </a>
+
+            <a className={styles.layoutSeeMoreElement} href="/poland">
+              Polska
+            </a>
+
+            <a className={styles.layoutSeeMoreElement} href="/situations">
+              Sytuacje
+            </a>
+          </div>
+        </div>
+        <div className={styles.menuBottom}>
+          <li className={styles.menuLi}>
+            <i className={classnames("icon-paper-plane", styles.menuIcon)} />
+            <a className={styles.menuLink} href="/about">
+              Kontakt
+            </a>
+          </li>
+          <li className={styles.menuLi}>
+            <a
+              className={styles.menuLink}
+              href="https://www.instagram.com/werachodanionek/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className={classnames("icon-instagram", styles.menuIcon)} />
+            </a>
+          </li>
+
+          <li className={styles.menuLi}>
+            <a
+              className={styles.menuLink}
+              href="https://www.facebook.com/profile.php?id=100008104848404"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i
+                className={classnames("icon-facebook-circled", styles.menuIcon)}
+              />
+            </a>
+          </li>
+        </div>
+      </div>
 
       <p className={styles.footerText}>Wera Chodanionek Fotografia | 2020</p>
     </div>

@@ -29,8 +29,7 @@ const About = ({ data }) => {
             </div>
             <div className={styles.aboutContent}>
               <div className={styles.aboutDescripion}>
-                <p className={styles.aboutInfBold}>Wera Chodanionek</p>
-                <p>
+               <p>
                   Sed in risus non neque commodo viverra at et ante. Quisque
                   egestas tortor at lacus aliquam tincidunt. Praesent et
                   bibendum leo. Morbi viverra sollicitudin quam, sit amet

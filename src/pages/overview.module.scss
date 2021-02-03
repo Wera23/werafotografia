@@ -1,8 +1,16 @@
-.homepage {
+@mixin centralize {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin centralizeColumn {
+  @include centralize;
   flex-direction: column;
+}
+
+.homepage {
+  @include centralizeColumn;
   width: 100%;
   box-sizing: border-box;
   background-color: rgb(241, 240, 236);
@@ -47,10 +55,7 @@ img {
 
 .overviewFull {
   width: 100%;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centralizeColumn;
 }
 
 .imageMobile {
@@ -59,9 +64,7 @@ img {
 }
 
 .nonstandartOverlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centralize;
   align-content: center;
   height: 100%;
   padding-top: 30%;
@@ -73,23 +76,17 @@ img {
 
 .overviewScreen {
   width: 100vw;
-  display: flex;
   padding: 50px 0;
-  justify-content: center;
-  align-items: center;
+  @include centralize;
 }
 
 .overviewElement {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centralize;
 }
 
 .overviewImg100H {
   width: 70%;
-  // display: flex;
-  // flex: 1;
   height: 100%;
   max-height: 100vh;
 }
@@ -117,50 +114,6 @@ img {
   display: none;
 }
 
-.homepageSeeMore {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 60vw;
-  padding-top: 80px;
-  padding-bottom: 50px;
-
-  h2 {
-    opacity: 0.8;
-    font-size: 14px;
-    font-weight: normal;
-  }
-}
-
-.homepageSeeGaleries {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-top: 40px;
-}
-
-.homepageSeeMoreElement {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  border-left: 1px solid rgb(143, 141, 141);
-
-  text-transform: uppercase;
-  font-size: 14px;
-  text-decoration: none;
-  font-weight: 300;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:first-child {
-    border-left: none;
-  }
-}
-
 .homepageSeeMoreIcon {
   margin-left: 5px;
 }
@@ -170,23 +123,13 @@ img {
     display: block;
   }
 
-  .homepageSeeMoreElement {
-    width: 100%;
-    border-left: none;
-    margin-bottom: 6px;
-  }
-
-  .homepageSeeMore h2{
-margin-left: 20px;
-  }
-
-  .homepageSeeGaleries {
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-  }
-
   .displayDesktop {
     display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .homepage {
+    padding-top: 20px;
   }
 }
