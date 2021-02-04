@@ -261,10 +261,31 @@ const MountainsGallery = ({ data }) => {
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
-                <Img fluid={data.mountains54.childImageSharp.fluid} alt="" />
                 <Img fluid={data.mountains55.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains62.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains61.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains60.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains59.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+
           </div>
         </div>
       </Layout>
@@ -592,6 +613,48 @@ export const query = graphql`
 
     mountains55: file(
       relativePath: { eq: "images/mountains/mountains55.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains56: file(
+      relativePath: { eq: "images/mountains/mountains56.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains57: file(
+      relativePath: { eq: "images/mountains/mountains57.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains58: file(
+      relativePath: { eq: "images/mountains/mountains58.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains59: file(
+      relativePath: { eq: "images/mountains/mountains59.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains60: file(
+      relativePath: { eq: "images/mountains/mountains60.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains61: file(
+      relativePath: { eq: "images/mountains/mountains61.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains62: file(
+      relativePath: { eq: "images/mountains/mountains62.jpg" }
     ) {
       ...fluidImage
     }
