@@ -17,24 +17,7 @@ const PolskaGallery = ({ data }) => {
       <Layout>
         <div className={styles.galleryPoland}>
           <div className={styles.gallery}>
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.polska14.childImageSharp.fluid} alt="" />
-                <Img fluid={data.polska15.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.polska16.childImageSharp.fluid} alt="" />
-                <Img fluid={data.polska17.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+           
 
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
@@ -238,6 +221,25 @@ const PolskaGallery = ({ data }) => {
               <Masonry gutter={gutter}>
                 <Img fluid={data.polska13.childImageSharp.fluid} alt="" />
                 <Img fluid={data.mountains40.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.polska14.childImageSharp.fluid} alt="" />
+                <Img fluid={data.polska15.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.polska16.childImageSharp.fluid} alt="" />
+                <Img fluid={data.polska17.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
