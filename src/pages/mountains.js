@@ -261,27 +261,34 @@ const MountainsGallery = ({ data }) => {
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
-                <Img fluid={data.mountains55.childImageSharp.fluid} alt="" />
-                <Img fluid={data.mountains62.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
-
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.mountains61.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains59.childImageSharp.fluid} alt="" />
                 <Img fluid={data.mountains60.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
+            
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains65.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains62.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains61.childImageSharp.fluid} alt="" />
+
+              </Masonry>
+            </ResponsiveMasonry>
+
+        
+
+         
 
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
-                <Img fluid={data.mountains59.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains63.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains64.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -655,6 +662,25 @@ export const query = graphql`
 
     mountains62: file(
       relativePath: { eq: "images/mountains/mountains62.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains63: file(
+      relativePath: { eq: "images/mountains/mountains63.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains64: file(
+      relativePath: { eq: "images/mountains/mountains64.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    
+    mountains65: file(
+      relativePath: { eq: "images/mountains/mountains65.jpg" }
     ) {
       ...fluidImage
     }

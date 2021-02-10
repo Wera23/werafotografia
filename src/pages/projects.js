@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import classnames from "classnames"
 
 import SEO from "../components/seo"
@@ -7,6 +7,10 @@ import Layout from "../components/layout"
 import styles from "./projects.module.scss"
 
 const Projects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <SEO title={"Wera Chodanionek Fotografia"} />

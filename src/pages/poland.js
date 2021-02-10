@@ -17,8 +17,6 @@ const PolskaGallery = ({ data }) => {
       <Layout>
         <div className={styles.galleryPoland}>
           <div className={styles.gallery}>
-           
-
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
               className={styles.partOfgallery}
@@ -243,6 +241,16 @@ const PolskaGallery = ({ data }) => {
               </Masonry>
             </ResponsiveMasonry>
 
+            {/* <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.polska23.childImageSharp.fluid} alt="" />
+                <Img fluid={data.polska24.childImageSharp.fluid} alt="" />
+                <Img fluid={data.polska25.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry> */}
           </div>
         </div>
       </Layout>
@@ -349,6 +357,18 @@ export const query = graphql`
     }
 
     polska22: file(relativePath: { eq: "images/polska/Polska22.jpg" }) {
+      ...fluidImage
+    }
+
+    polska23: file(relativePath: { eq: "images/polska/Polska23.jpg" }) {
+      ...fluidImage
+    }
+
+    polska24: file(relativePath: { eq: "images/polska/Polska24.jpg" }) {
+      ...fluidImage
+    }
+
+    polska25: file(relativePath: { eq: "images/polska/Polska25.jpg" }) {
       ...fluidImage
     }
 

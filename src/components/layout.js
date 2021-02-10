@@ -4,26 +4,30 @@ import classnames from "classnames"
 import styles from "./layout.module.scss"
 
 const Layout = ({ children }) => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+  }
+
   return (
     <div className={styles.page}>
       <ul className={styles.menu}>
         <li className={styles.menuLi}>
           <i className={classnames("icon-pagelines", styles.menuIcon)} />
-          <a className={styles.menuLink} href="/">
+          <a className={styles.menuLink} href="/" onClick={scrollToTop}>
             Strona główna
           </a>
         </li>
 
         <li className={styles.menuLi}>
           <i className={classnames("icon-fog-sun", styles.menuIcon)} />
-          <a className={styles.menuLink} href="/projects">
+          <a className={styles.menuLink} href="/projects" onClick={scrollToTop}>
             Tematy
           </a>
         </li>
 
         <li className={styles.menuLi}>
           <i className={classnames("icon-paper-plane", styles.menuIcon)} />
-          <a className={styles.menuLink} href="/about">
+          <a className={styles.menuLink} href="/about" onClick={scrollToTop}>
             Kontakt
           </a>
         </li>
@@ -53,7 +57,7 @@ const Layout = ({ children }) => {
         </li>
       </ul>
 
-      <a href="/" className={styles.pageTitle}>
+      <a href="/" className={styles.pageTitle} onClick={scrollToTop}>
         Wera Chodanionek
       </a>
 
@@ -69,23 +73,43 @@ const Layout = ({ children }) => {
           </h2>
 
           <div className={styles.layoutSeeGaleries}>
-            <a href="/mountains" className={styles.layoutSeeMoreElement}>
+            <a
+              href="/mountains"
+              className={styles.layoutSeeMoreElement}
+              onClick={scrollToTop}
+            >
               Góry
             </a>
 
-            <a className={styles.layoutSeeMoreElement} href="/travels">
+            <a
+              className={styles.layoutSeeMoreElement}
+              href="/travels"
+              onClick={scrollToTop}
+            >
               Podróże
             </a>
 
-            <a className={styles.layoutSeeMoreElement} href="/cats">
+            <a
+              className={styles.layoutSeeMoreElement}
+              href="/cats"
+              onClick={scrollToTop}
+            >
               Koty
             </a>
 
-            <a className={styles.layoutSeeMoreElement} href="/poland">
+            <a
+              className={styles.layoutSeeMoreElement}
+              href="/poland"
+              onClick={scrollToTop}
+            >
               Polska
             </a>
 
-            <a className={styles.layoutSeeMoreElement} href="/situations">
+            <a
+              className={styles.layoutSeeMoreElement}
+              href="/situations"
+              onClick={scrollToTop}
+            >
               Sytuacje
             </a>
           </div>
@@ -93,7 +117,7 @@ const Layout = ({ children }) => {
         <div className={styles.menuBottom}>
           <li className={styles.menuLi}>
             <i className={classnames("icon-paper-plane", styles.menuIcon)} />
-            <a className={styles.menuLink} href="/about">
+            <a className={styles.menuLink} href="/about" onClick={scrollToTop}>
               Kontakt
             </a>
           </li>

@@ -71,6 +71,17 @@ const SituationsGallery = ({ data }) => {
             </ResponsiveMasonry>
 
             <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.teatr6.childImageSharp.fluid} alt="" />
+                <Img fluid={data.teatr7.childImageSharp.fluid} alt="" />
+                <Img fluid={data.teatr8.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
               className={styles.partOfgallery}
             >
@@ -167,7 +178,6 @@ const SituationsGallery = ({ data }) => {
               </Masonry>
             </ResponsiveMasonry>
 
-
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
               className={styles.partOfgallery}
@@ -179,7 +189,7 @@ const SituationsGallery = ({ data }) => {
               </Masonry>
             </ResponsiveMasonry>
 
-            <ResponsiveMasonry
+            {/* <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
               className={styles.partOfgallery}
             >
@@ -188,10 +198,8 @@ const SituationsGallery = ({ data }) => {
 
                 <Img fluid={data.mdk8.childImageSharp.fluid} alt="" />
                 <Img fluid={data.mdk9.childImageSharp.fluid} alt="" />
-              
               </Masonry>
-            </ResponsiveMasonry>
-
+            </ResponsiveMasonry> */}
           </div>
         </div>
       </Layout>
@@ -270,6 +278,18 @@ export const query = graphql`
     }
 
     teatr5: file(relativePath: { eq: "images/teatr/teatr5.jpg" }) {
+      ...fluidImage
+    }
+
+    teatr6: file(relativePath: { eq: "images/teatr/teatr6.jpg" }) {
+      ...fluidImage
+    }
+
+    teatr7: file(relativePath: { eq: "images/teatr/teatr7.jpg" }) {
+      ...fluidImage
+    }
+
+    teatr8: file(relativePath: { eq: "images/teatr/teatr8.jpg" }) {
       ...fluidImage
     }
 
@@ -382,7 +402,8 @@ export const query = graphql`
     }
     mdk7: file(relativePath: { eq: "images/mdk/mdk7.jpg" }) {
       ...fluidImage
-    }  mdk8: file(relativePath: { eq: "images/mdk/mdk8.jpg" }) {
+    }
+    mdk8: file(relativePath: { eq: "images/mdk/mdk8.jpg" }) {
       ...fluidImage
     }
     mdk9: file(relativePath: { eq: "images/mdk/mdk9.jpg" }) {

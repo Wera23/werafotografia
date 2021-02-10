@@ -289,7 +289,7 @@ const Home = ({ data }) => {
                 </div>
               </div>
 
-              <div className={styles.HPGallery}>
+              {/* <div className={styles.HPGallery}>
                 <ResponsiveMasonry
                   columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
                   className={styles.partOfgallery}
@@ -300,12 +300,12 @@ const Home = ({ data }) => {
                       alt=""
                     />
                     <Img
-                      fluid={data.mountains57.childImageSharp.fluid}
+                      fluid={data.mountains53.childImageSharp.fluid}
                       alt=""
                     />
                   </Masonry>
                 </ResponsiveMasonry>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -585,6 +585,13 @@ export const query = graphql`
 
     mountains52: file(
       relativePath: { eq: "images/mountains/mountains52.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    
+    mountains53: file(
+      relativePath: { eq: "images/mountains/mountains53.jpg" }
     ) {
       ...fluidImage
     }
