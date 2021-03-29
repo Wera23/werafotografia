@@ -9,8 +9,8 @@ import Layout from "../components/layout"
 import styles from "./Galleries.module.scss"
 
 const CatsGallery = ({ data }) => {
-  const gutter = "30px"
-
+  const gutter = "30px";
+  
   return (
     <>
       <SEO title={"Wera Chodanionek Fotografia: Koty"} />
@@ -124,10 +124,21 @@ const CatsGallery = ({ data }) => {
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.cat23.childImageSharp.fluid} alt="" />
+                <Img fluid={data.cat28.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.cat26.childImageSharp.fluid} alt="" />
+                {/* <Img fluid={data.cat27.childImageSharp.fluid} alt="" /> */}
               </Masonry>
             </ResponsiveMasonry>
           </div>
-        </div>
+        </div>        
       </Layout>
     </>
   )
@@ -235,7 +246,23 @@ export const query = graphql`
       ...fluidImage
     }
 
+
     cat24: file(relativePath: { eq: "images/cat/cat24.jpg" }) {
+      ...fluidImage
+    }
+
+    cat25: file(relativePath: { eq: "images/cat/cat25.jpg" }) {
+      ...fluidImage
+    }
+
+    cat26: file(relativePath: { eq: "images/cat/cat26.jpg" }) {
+      ...fluidImage
+    }
+
+    cat27: file(relativePath: { eq: "images/cat/cat27.jpg" }) {
+      ...fluidImage
+    }
+    cat28: file(relativePath: { eq: "images/cat/cat28.jpg" }) {
       ...fluidImage
     }
   }
