@@ -276,11 +276,7 @@ const MountainsGallery = ({ data }) => {
                 <Img fluid={data.mountains61.childImageSharp.fluid} alt="" />
 
               </Masonry>
-            </ResponsiveMasonry>
-
-        
-
-         
+            </ResponsiveMasonry>       
 
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
@@ -291,6 +287,16 @@ const MountainsGallery = ({ data }) => {
                 <Img fluid={data.mountains64.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
+
+            {/* <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.mountains67.childImageSharp.fluid} alt="" />
+                <Img fluid={data.mountains66.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry> */}
 
 
           </div>
@@ -681,6 +687,24 @@ export const query = graphql`
     
     mountains65: file(
       relativePath: { eq: "images/mountains/mountains65.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains66: file(
+      relativePath: { eq: "images/mountains/mountains66.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains67: file(
+      relativePath: { eq: "images/mountains/mountains67.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    mountains68: file(
+      relativePath: { eq: "images/mountains/mountains68.jpg" }
     ) {
       ...fluidImage
     }

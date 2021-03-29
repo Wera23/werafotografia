@@ -60,6 +60,16 @@ const SituationsGallery = ({ data }) => {
             </ResponsiveMasonry>
 
             <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.teatr9.childImageSharp.fluid} alt="" />
+                <Img fluid={data.teatr10.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
               className={styles.partOfgallery}
             >
@@ -290,6 +300,14 @@ export const query = graphql`
     }
 
     teatr8: file(relativePath: { eq: "images/teatr/teatr8.jpg" }) {
+      ...fluidImage
+    }
+
+    teatr9: file(relativePath: { eq: "images/teatr/teatr9.jpg" }) {
+      ...fluidImage
+    }
+
+    teatr10: file(relativePath: { eq: "images/teatr/teatr10.jpg" }) {
       ...fluidImage
     }
 
