@@ -123,7 +123,18 @@ const CatsGallery = ({ data }) => {
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
-                <Img fluid={data.cat23.childImageSharp.fluid} alt="" />
+              <Img fluid={data.cat23.childImageSharp.fluid} alt="" />
+                <Img fluid={data.cat25.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+              <Img fluid={data.cat26.childImageSharp.fluid} alt="" />
+                <Img fluid={data.cat27.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
           </div>
@@ -236,6 +247,18 @@ export const query = graphql`
     }
 
     cat24: file(relativePath: { eq: "images/cat/cat24.jpg" }) {
+      ...fluidImage
+    }
+
+    cat25: file(relativePath: { eq: "images/cat/cat25.jpg" }) {
+      ...fluidImage
+    }
+
+    cat26: file(relativePath: { eq: "images/cat/cat26.jpg" }) {
+      ...fluidImage
+    }
+
+    cat27: file(relativePath: { eq: "images/cat/cat27.jpg" }) {
       ...fluidImage
     }
   }
