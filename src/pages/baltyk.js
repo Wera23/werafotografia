@@ -54,7 +54,7 @@ const SituationsGallery = ({ data }) => {
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.baltic10.childImageSharp.fluid} alt="" />
-                <Img fluid={data.baltic5.childImageSharp.fluid} alt="" />
+                <Img fluid={data.baltic12.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -65,6 +65,36 @@ const SituationsGallery = ({ data }) => {
               <Masonry gutter={gutter}>
                 <Img fluid={data.baltic8.childImageSharp.fluid} alt="" />
                 <Img fluid={data.baltic9.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.baltic13.childImageSharp.fluid} alt="" />
+                <Img fluid={data.baltic14.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.baltic16.childImageSharp.fluid} alt="" />
+                <Img fluid={data.baltic15.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.baltic5.childImageSharp.fluid} alt="" />
+                <Img fluid={data.baltic17.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
           </div>
@@ -129,6 +159,30 @@ export const query = graphql`
     }
 
     baltic11: file(relativePath: { eq: "images/baltic/baltic11.jpg" }) {
+      ...fluidImage
+    }
+
+    baltic12: file(relativePath: { eq: "images/baltic/baltic12.jpg" }) {
+      ...fluidImage
+    }
+
+    baltic13: file(relativePath: { eq: "images/baltic/baltic13.jpg" }) {
+      ...fluidImage
+    }
+
+    baltic14: file(relativePath: { eq: "images/baltic/baltic14.jpg" }) {
+      ...fluidImage
+    }
+
+    baltic15: file(relativePath: { eq: "images/baltic/baltic15.jpg" }) {
+      ...fluidImage
+    }
+
+    baltic16: file(relativePath: { eq: "images/baltic/baltic16.jpg" }) {
+      ...fluidImage
+    }
+
+    baltic17: file(relativePath: { eq: "images/baltic/baltic17.jpg" }) {
       ...fluidImage
     }
   }
