@@ -262,11 +262,8 @@ export const query = graphql`
     cat27: file(relativePath: { eq: "images/cat/cat27.jpg" }) {
       ...fluidImage
     }
-<<<<<<< HEAD
-=======
     cat28: file(relativePath: { eq: "images/cat/cat28.jpg" }) {
       ...fluidImage
     }
->>>>>>> 65f02051fa804fcde92845fa0c76e6a1123f727d
   }
 `
