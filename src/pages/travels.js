@@ -194,6 +194,37 @@ const TravelGallery = ({ data }) => {
             </ResponsiveMasonry>
 
             <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.hiszpania1.childImageSharp.fluid} alt="" />
+                <Img fluid={data.hiszpania2.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.hiszpania3.childImageSharp.fluid} alt="" />
+                <Img fluid={data.hiszpania7.childImageSharp.fluid} alt="" />
+                <Img fluid={data.hiszpania5.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.hiszpania6.childImageSharp.fluid} alt="" />
+                <Img fluid={data.hiszpania4.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
               className={styles.partOfgallery}
             >
@@ -518,6 +549,34 @@ export const query = graphql`
     }
 
     wegry2: file(relativePath: { eq: "images/wegry/wegry2.jpg" }) {
+      ...fluidImage
+    }
+
+    hiszpania1: file(relativePath: { eq: "images/hiszpania/hiszpania1.jpg" }) {
+      ...fluidImage
+    }
+
+    hiszpania2: file(relativePath: { eq: "images/hiszpania/hiszpania2.jpg" }) {
+      ...fluidImage
+    }
+
+    hiszpania3: file(relativePath: { eq: "images/hiszpania/hiszpania3.jpg" }) {
+      ...fluidImage
+    }
+
+    hiszpania4: file(relativePath: { eq: "images/hiszpania/hiszpania4.jpg" }) {
+      ...fluidImage
+    }
+
+    hiszpania5: file(relativePath: { eq: "images/hiszpania/hiszpania5.jpg" }) {
+      ...fluidImage
+    }
+
+    hiszpania6: file(relativePath: { eq: "images/hiszpania/hiszpania6.jpg" }) {
+      ...fluidImage
+    }
+
+    hiszpania7: file(relativePath: { eq: "images/hiszpania/hiszpania7.jpg" }) {
       ...fluidImage
     }
   }
