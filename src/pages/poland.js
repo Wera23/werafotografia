@@ -17,13 +17,15 @@ const PolskaGallery = ({ data }) => {
       <Layout>
         <div className={styles.galleryPoland}>
           <div className={styles.gallery}>
-            <ResponsiveMasonry
+
+
+          <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
-                <Img fluid={data.polska1.childImageSharp.fluid} alt="" />
-                <Img fluid={data.polska2.childImageSharp.fluid} alt="" />
+                <Img fluid={data.sea4.childImageSharp.fluid} alt="" />
+                <Img fluid={data.sea5.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -32,8 +34,52 @@ const PolskaGallery = ({ data }) => {
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
+                <Img fluid={data.sea10.childImageSharp.fluid} alt="" />
+                <Img fluid={data.sea7.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.polska30.childImageSharp.fluid} alt="" />
+                <Img fluid={data.polska31.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+           
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.polska2.childImageSharp.fluid} alt="" />
+                <Img fluid={data.sea8.childImageSharp.fluid} alt="" />
+                
+              </Masonry>
+            </ResponsiveMasonry>
+
+
+            {/* <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.polska1.childImageSharp.fluid} alt="" />
+                <Img fluid={data.polska2.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry> */}
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
                 <Img fluid={data.diff4.childImageSharp.fluid} alt="" />
                 <Img fluid={data.diff6.childImageSharp.fluid} alt="" />
+
               </Masonry>
             </ResponsiveMasonry>
 
@@ -96,6 +142,22 @@ const PolskaGallery = ({ data }) => {
                 <Img fluid={data.mazury11.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
@@ -189,12 +251,56 @@ const PolskaGallery = ({ data }) => {
             </ResponsiveMasonry>
 
             <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.polska6.childImageSharp.fluid} alt="" />
                 <Img fluid={data.polska7.childImageSharp.fluid} alt="" />
+                <Img
+                  className={styles.photoMobileHidden}
+                  fluid={data.polska8.childImageSharp.fluid}
+                  alt=""
+                />
+              </Masonry>
+            </ResponsiveMasonry>
+
+     
+
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.polska36.childImageSharp.fluid} alt="" />
+                <Img fluid={data.polska32.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.polska33.childImageSharp.fluid} alt="" />
+                <Img fluid={data.polska34.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            
+         
+
+            
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.polska26.childImageSharp.fluid} alt="" />
+                <Img fluid={data.polska27.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -203,15 +309,12 @@ const PolskaGallery = ({ data }) => {
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
-                <Img fluid={data.polska8.childImageSharp.fluid} alt="" />
-                <Img
-                  className={styles.photoMobileHidden}
-                  fluid={data.polska9.childImageSharp.fluid}
-                  alt=""
-                />
+                <Img fluid={data.polska28.childImageSharp.fluid} alt="" />
+                <Img fluid={data.polska29.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
+{/* 
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
               className={styles.partOfgallery}
@@ -220,7 +323,20 @@ const PolskaGallery = ({ data }) => {
                 <Img fluid={data.polska13.childImageSharp.fluid} alt="" />
                 <Img fluid={data.mountains40.childImageSharp.fluid} alt="" />
               </Masonry>
+            </ResponsiveMasonry> */}
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.sea9.childImageSharp.fluid} alt="" />
+                <Img fluid={data.sea11.childImageSharp.fluid} alt="" />
+                
+              </Masonry>
             </ResponsiveMasonry>
+
+     
 
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
@@ -240,6 +356,7 @@ const PolskaGallery = ({ data }) => {
                 <Img fluid={data.polska17.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
+     
 
             {/* <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
@@ -372,6 +489,50 @@ export const query = graphql`
       ...fluidImage
     }
 
+    polska26: file(relativePath: { eq: "images/polska/Polska26.jpg" }) {
+      ...fluidImage
+    }
+
+    polska27: file(relativePath: { eq: "images/polska/Polska27.jpg" }) {
+      ...fluidImage
+    }
+
+    polska28: file(relativePath: { eq: "images/polska/Polska28.jpg" }) {
+      ...fluidImage
+    }
+
+    polska29: file(relativePath: { eq: "images/polska/Polska29.jpg" }) {
+      ...fluidImage
+    }
+
+    polska30: file(relativePath: { eq: "images/polska/Polska30.jpg" }) {
+      ...fluidImage
+    }
+
+    polska31: file(relativePath: { eq: "images/polska/Polska31.jpg" }) {
+      ...fluidImage
+    }
+
+    polska32: file(relativePath: { eq: "images/polska/Polska32.jpg" }) {
+      ...fluidImage
+    }
+
+    polska33: file(relativePath: { eq: "images/polska/Polska33.jpg" }) {
+      ...fluidImage
+    }
+
+    polska34: file(relativePath: { eq: "images/polska/Polska34.jpg" }) {
+      ...fluidImage
+    }
+
+    polska35: file(relativePath: { eq: "images/polska/Polska35.jpg" }) {
+      ...fluidImage
+    }
+
+    polska36: file(relativePath: { eq: "images/polska/Polska36.jpg" }) {
+      ...fluidImage
+    }
+
     diff4: file(relativePath: { eq: "images/diff/dif4.jpg" }) {
       ...fluidImage
     }
@@ -468,6 +629,50 @@ export const query = graphql`
     }
 
     sea3: file(relativePath: { eq: "images/sea/sea3.jpg" }) {
+      ...fluidImage
+    }
+
+    sea4: file(relativePath: { eq: "images/sea/sea4.jpg" }) {
+      ...fluidImage
+    }
+
+    sea5: file(relativePath: { eq: "images/sea/sea5.jpg" }) {
+      ...fluidImage
+    }
+
+    sea6: file(relativePath: { eq: "images/sea/sea6.jpg" }) {
+      ...fluidImage
+    }
+
+    sea7: file(relativePath: { eq: "images/sea/sea7.jpg" }) {
+      ...fluidImage
+    }
+
+    sea8: file(relativePath: { eq: "images/sea/sea8.jpg" }) {
+      ...fluidImage
+    }
+
+    sea9: file(relativePath: { eq: "images/sea/sea9.jpg" }) {
+      ...fluidImage
+    }
+
+    sea10: file(relativePath: { eq: "images/sea/sea10.jpg" }) {
+      ...fluidImage
+    }
+
+    sea11: file(relativePath: { eq: "images/sea/sea11.jpg" }) {
+      ...fluidImage
+    }
+
+    sea12: file(relativePath: { eq: "images/sea/sea12.jpg" }) {
+      ...fluidImage
+    }
+
+    sea13: file(relativePath: { eq: "images/sea/sea13.jpg" }) {
+      ...fluidImage
+    }
+
+    sea14: file(relativePath: { eq: "images/sea/sea14.jpg" }) {
       ...fluidImage
     }
 
