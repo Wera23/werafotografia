@@ -12,7 +12,7 @@ import "../../fontello/css/fontello.css"
 import styles from "./overview.module.scss"
 
 const Home = ({ data }) => {
-  const gutter = "30px"
+  const gutter = "2px"
 
   return (
     <>

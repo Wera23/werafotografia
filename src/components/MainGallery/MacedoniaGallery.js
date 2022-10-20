@@ -6,7 +6,7 @@ import ImagesDiff from "./Images/ImagesDiff";
 import "./MainGalleryImages.css";
 
 const MacedoniaGallery = () => {
-  const gutter = "30px";
+  const gutter = "2px";
 
   return (
     <div className="partOfgallery">

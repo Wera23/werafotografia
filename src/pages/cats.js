@@ -9,7 +9,7 @@ import Layout from "../components/layout"
 import styles from "./Galleries.module.scss"
 
 const CatsGallery = ({ data }) => {
-  const gutter = "30px";
+  const gutter = "2px";
   
   return (
     <>

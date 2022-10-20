@@ -8,14 +8,19 @@
   background-color: rgb(234, 238, 238);
 }
 
-.projectEl {
-  width: 50vw;
-  height: 40vw;
-  box-sizing: border-box;
+.projectRow {
+  width: 90vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+}
+
+.projectEl {
+  flex: 1;
+  box-sizing: border-box;
+  // border: 1px solid red;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
 }
 
 .projectEl h3 {
@@ -24,6 +29,7 @@
   font-size: 16px;
   letter-spacing: 4px;
   padding-top: 5px;
+  display: none;
 }
 
 .projectElLink {
@@ -61,22 +67,22 @@
 
 .projectElImage {
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  width: 40vw;
+  width: 50vw;
   height: 30vw;
 }
 
 .projectElImageMountains {
-  background-image: url("../assets/images/mountains/mountains10.jpg");
+  background-image: url("../assets/images/mountains/gory6.png");
 }
 
 .projectElImageTravels {
-  background-image: url("../assets/images/portugalia/portugalia5.jpg");
+  background-image: url("../assets/images/chorwacja/chorwacja7.jpg");
 }
 
 .projectElImagePoland {
-  background-image: url("../assets/images/diff/dif6.jpg");
+  background-image: url("../assets/images/polska/pol38.png");
 }
 
 .projectElImageCats {

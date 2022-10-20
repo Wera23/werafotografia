@@ -8,7 +8,7 @@ import Layout from "../components/layout"
 import styles from "./Galleries.module.scss"
 
 const TravelGallery = ({ data }) => {
-  const gutter = "30px"
+  const gutter = "2px"
 
   return (
     <>
@@ -112,6 +112,50 @@ const TravelGallery = ({ data }) => {
             </ResponsiveMasonry>
 
             <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img
+                  className={styles.photoMobileHidden}
+                  fluid={data.chorwacja8.childImageSharp.fluid}
+                  alt=""
+                />
+                <Img fluid={data.chorwacja7.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img
+                  className={styles.photoMobileHidden}
+                  fluid={data.chorwacja5.childImageSharp.fluid}
+                  alt=""
+                />
+                <Img fluid={data.chorwacja6.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img
+                  className={styles.photoMobileHidden}
+                  fluid={data.chorwacja9.childImageSharp.fluid}
+                  alt=""
+                />
+                <Img fluid={data.chorwacja11.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            
+           <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
               className={styles.partOfgallery}
             >
@@ -240,8 +284,32 @@ const TravelGallery = ({ data }) => {
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
+                <Img
+                  className={styles.photoMobileHidden}
+                  fluid={data.chorwacja12.childImageSharp.fluid}
+                  alt=""
+                />
+                <Img fluid={data.chorwacja10.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
                 <Img fluid={data.slowenia1.childImageSharp.fluid} alt="" />
                 <Img fluid={data.slowenia2.childImageSharp.fluid} alt="" />
+              </Masonry>
+            </ResponsiveMasonry>
+
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+              className={styles.partOfgallery}
+            >
+              <Masonry gutter={gutter}>
+                <Img fluid={data.wlochy5.childImageSharp.fluid} alt="" />
+                <Img fluid={data.wlochy6.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -254,6 +322,8 @@ const TravelGallery = ({ data }) => {
                 <Img fluid={data.slowenia4.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
+
+      
 
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
@@ -530,6 +600,39 @@ export const query = graphql`
       ...fluidImage
     }
 
+    chorwacja6: file(relativePath: { eq: "images/chorwacja/chorwacja6.jpg" }) {
+      ...fluidImage
+    }
+
+    chorwacja7: file(relativePath: { eq: "images/chorwacja/chorwacja7.jpg" }) {
+      ...fluidImage
+    }
+
+    chorwacja8: file(relativePath: { eq: "images/chorwacja/chorwacja8.jpg" }) {
+      ...fluidImage
+    }
+
+    chorwacja9: file(relativePath: { eq: "images/chorwacja/chorwacja9.jpg" }) {
+      ...fluidImage
+    }
+
+    chorwacja10: file(
+      relativePath: { eq: "images/chorwacja/chorwacja10.jpg" }
+    ) {
+      ...fluidImage
+    }
+    chorwacja11: file(
+      relativePath: { eq: "images/chorwacja/chorwacja11.jpg" }
+    ) {
+      ...fluidImage
+    }
+
+    chorwacja12: file(
+      relativePath: { eq: "images/chorwacja/chorwacja12.jpg" }
+    ) {
+      ...fluidImage
+    }
+
     slowenia1: file(relativePath: { eq: "images/slowenia/slowenia1.jpg" }) {
       ...fluidImage
     }
@@ -577,6 +680,14 @@ export const query = graphql`
     }
 
     hiszpania7: file(relativePath: { eq: "images/hiszpania/hiszpania7.jpg" }) {
+      ...fluidImage
+    }
+
+    wlochy5: file(relativePath: { eq: "images/wlochy/Wlochy5.jpg" }) {
+      ...fluidImage
+    }
+
+    wlochy6: file(relativePath: { eq: "images/wlochy/Wlochy6.jpg" }) {
       ...fluidImage
     }
   }
