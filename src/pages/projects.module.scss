@@ -5,31 +5,17 @@
   flex-wrap: wrap;
   width: 100vw;
   padding-top: 8vh;
-  background-color: rgb(234, 238, 238);
 }
 
 .projectRow {
   width: 90vw;
   display: flex;
+  margin-bottom: 2px;
 }
 
 .projectEl {
   flex: 1;
   box-sizing: border-box;
-  // border: 1px solid red;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-direction: column;
-}
-
-.projectEl h3 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 4px;
-  padding-top: 5px;
-  display: none;
 }
 
 .projectElLink {
@@ -40,37 +26,33 @@
   text-decoration: none;
 }
 
-.projectEl:first-child {
-  background-color: rgb(234, 238, 238);
-}
-
-.projectEl:nth-child(2) {
-  background-color: rgba(240, 236, 231, 0.842);
-}
-
-.projectEl:nth-child(3) {
-  background-color: rgb(241, 241, 233);
-}
-
-.projectEl:nth-child(4) {
-  background-color: rgb(241, 236, 228);
-}
-
-.projectEl:nth-child(5) {
-  background-color: rgb(235, 243, 243);
-}
-
-.projectEl:nth-child(6) {
-  //background-color: rgb(248, 248, 242);
-  background-color: rgba(240, 236, 231, 0.842);
-}
-
 .projectElImage {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 50vw;
+  width: 45vw;
   height: 30vw;
+  opacity: 1;
+  position: relative;
+
+  h3 {
+    position: absolute;
+    z-index: 4;
+    bottom: 20px;
+    right: 20px;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 4px;
+    padding-top: 5px;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 1.8;
+  }
+
+  &:hover {
+    filter: brightness(0.8);
+    transition: all 0.3s;
+  }
 }
 
 .projectElImageMountains {
@@ -78,7 +60,7 @@
 }
 
 .projectElImageTravels {
-  background-image: url("../assets/images/chorwacja/chorwacja7.jpg");
+  background-image: url("../assets/images/chorwacja/chorwacja8.jpg");
 }
 
 .projectElImagePoland {
@@ -89,21 +71,40 @@
   background-image: url("../assets/images/diff/dif8.jpg");
 }
 
-.projectElImageSituations {
-  background-image: url("../assets/images/diff/dif16.jpg");
+.projectElImagePets {
+  background-image: url("../assets/images/pets/miya1.png");
 }
 
-@media (max-width: 768px) {
-  .projects {
-    padding-top: 0px;
+.projectElImageSituations {
+  background-image: url("../assets/images/diff/dif16.jpg");
+
+  @media (max-width: 1430px) {
+    .projectElImage {
+      h3 {
+        font-size: 16px;
+      }
+    }
   }
-  .projectEl {
+}
+
+@media (max-width: 911px) {
+  .projectRow {
+    flex-direction: column;
     width: 100vw;
-    height: 70vw;
+    margin-bottom: 0;
   }
 
   .projectElImage {
-    width: 90vw;
-    height: 60vw;
+    width: 100vw;
+    height: 66.7vw;
+    h3 {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .projects {
+    padding-top: 30px;
   }
 }

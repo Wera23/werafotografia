@@ -5,7 +5,6 @@ img {
 }
 
 .gallery {
-  //width: calc(100vw - 60px);
   width: 75vw;
   padding-top: 12vh;
   padding-bottom: 50px;
@@ -27,28 +26,15 @@ img {
   justify-content: center;
 }
 
-.galleryTravels {
-  background-color: rgb(234, 238, 238);
-  width: 100vw;
-}
-
-.galleryCats {
-  background-color: rgb(241, 236, 228);
-}
-
-.galleryMountains {
-  background-color: rgba(240, 236, 231, 0.842);
-  width: 100vw;
-}
-
-.galleryPoland {
-  background-color: rgb(241, 241, 233);
-  width: 100vw;
-}
-
 @media (max-width: 1600px) {
   .gallery {
     width: 90vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hiddenForMobile {
+    border: 1px solid red;
   }
 }
 
@@ -65,14 +51,13 @@ img {
     padding: 0 !important;
   }
 
-  .photoMobileBottom0{
+  .photoMobileBottom0 {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
 
-  .photoMobileBTop0{
+  .photoMobileBTop0 {
     margin-top: 0 !important;
     padding-top: 0 !important;
   }
-
 }

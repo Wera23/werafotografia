@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
 
         <li className={styles.menuLi}>
           <i className={classnames("icon-fog-sun", styles.menuIcon)} />
-          <a className={styles.menuLink} href="/projects" onClick={scrollToTop}>
+          <a className={styles.menuLink} href="/" onClick={scrollToTop}>
             Tematy
           </a>
         </li>
@@ -91,14 +91,6 @@ const Layout = ({ children }) => {
 
             <a
               className={styles.layoutSeeMoreElement}
-              href="/cats"
-              onClick={scrollToTop}
-            >
-              Koty
-            </a>
-
-            <a
-              className={styles.layoutSeeMoreElement}
               href="/poland"
               onClick={scrollToTop}
             >
@@ -107,10 +99,10 @@ const Layout = ({ children }) => {
 
             <a
               className={styles.layoutSeeMoreElement}
-              href="/situations"
+              href="/pets"
               onClick={scrollToTop}
             >
-              Sytuacje
+              Pets
             </a>
           </div>
         </div>
