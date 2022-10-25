@@ -17,24 +17,30 @@ img {
   padding: 1px 0;
 }
 
-.galleryTravels,
-.galleryCats,
-.galleryMountains,
-.galleryPoland {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-}
-
 @media (max-width: 1600px) {
   .gallery {
-    width: 90vw;
+    width: 95vw;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
+  .gallery {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 903px) {
   .hiddenForMobile {
-    border: 1px solid red;
+    display: none;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    flex: 0;
+
+    //tutaj
+    &.partOfgallery {
+      padding: 0;
+    }
   }
 }
 

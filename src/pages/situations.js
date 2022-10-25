@@ -16,190 +16,189 @@ const SituationsGallery = ({ data }) => {
     <>
       <SEO title={"Wera Chodanionek Fotografia: Akcje"} />
       <Layout>
-        <div className={styles.galleryCats}>
-          <div className={styles.gallery}>
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.husky1.childImageSharp.fluid} alt="" />
-                <Img fluid={data.husky2.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+        <div className={styles.gallery}>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.husky1.childImageSharp.fluid} alt="" />
+              <Img fluid={data.husky2.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.husky4.childImageSharp.fluid} alt="" />
-                <Img fluid={data.husky3.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.husky4.childImageSharp.fluid} alt="" />
+              <Img fluid={data.husky3.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.husky9.childImageSharp.fluid} alt="" />
-                <Img fluid={data.husky10.childImageSharp.fluid} alt="" />
-                <Img fluid={data.husky11.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.husky9.childImageSharp.fluid} alt="" />
+              <Img fluid={data.husky10.childImageSharp.fluid} alt="" />
+              <Img fluid={data.husky11.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.husky7.childImageSharp.fluid} alt="" />
-                <Img fluid={data.husky8.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.husky7.childImageSharp.fluid} alt="" />
+              <Img fluid={data.husky8.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.teatr9.childImageSharp.fluid} alt="" />
-                <Img fluid={data.teatr10.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.teatr9.childImageSharp.fluid} alt="" />
+              <Img fluid={data.teatr10.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.teatr1.childImageSharp.fluid} alt="" />
-                <Img fluid={data.teatr2.childImageSharp.fluid} alt="" />
-                <Img fluid={data.teatr3.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.teatr1.childImageSharp.fluid} alt="" />
+              <Img fluid={data.teatr2.childImageSharp.fluid} alt="" />
+              <Img fluid={data.teatr3.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.teatr6.childImageSharp.fluid} alt="" />
-                <Img fluid={data.teatr7.childImageSharp.fluid} alt="" />
-                <Img fluid={data.teatr8.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.teatr6.childImageSharp.fluid} alt="" />
+              <Img fluid={data.teatr7.childImageSharp.fluid} alt="" />
+              <Img fluid={data.teatr8.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.teatr5.childImageSharp.fluid} alt="" />
-                <Img fluid={data.teatr4.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.teatr5.childImageSharp.fluid} alt="" />
+              <Img fluid={data.teatr4.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.zagle12.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle16.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle14.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.zagle12.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle16.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle14.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.zagle13.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle10.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle11.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.zagle13.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle10.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle11.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.zagle15.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle9.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle17.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.zagle15.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle9.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle17.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.zagle1.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle2.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.zagle1.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle2.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.zagle6.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle7.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle8.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.zagle6.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle7.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle8.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.zagle20.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle21.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle22.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.zagle20.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle21.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle22.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.zagle23.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle24.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle25.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.zagle23.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle24.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle25.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.zagle3.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle4.childImageSharp.fluid} alt="" />
-                <Img fluid={data.zagle5.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.zagle3.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle4.childImageSharp.fluid} alt="" />
+              <Img fluid={data.zagle5.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.mdk2.childImageSharp.fluid} alt="" />
-                <Img fluid={data.mdk7.childImageSharp.fluid} alt="" />
-                <Img fluid={data.mdk3.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.mdk2.childImageSharp.fluid} alt="" />
+              <Img fluid={data.mdk7.childImageSharp.fluid} alt="" />
+              <Img fluid={data.mdk3.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            {/* <ResponsiveMasonry
+          {/* <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
               className={styles.partOfgallery}
             >
@@ -210,7 +209,6 @@ const SituationsGallery = ({ data }) => {
                 <Img fluid={data.mdk9.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry> */}
-          </div>
         </div>
       </Layout>
     </>

@@ -16,7 +16,6 @@ const SituationsGallery = ({ data }) => {
     <>
       <SEO title={"Wera Chodanionek Fotografia: Akcje"} />
       <Layout>
-        <div className={styles.galleryCats}>
           <div className={styles.gallery}>
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
@@ -98,7 +97,6 @@ const SituationsGallery = ({ data }) => {
               </Masonry>
             </ResponsiveMasonry>
           </div>
-        </div>
       </Layout>
     </>
   )

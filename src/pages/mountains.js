@@ -16,7 +16,6 @@ const MountainsGallery = ({ data }) => {
     <>
       <SEO title={"Wera Chodanionek Fotografia: Góry"} />
       <Layout>
-        <div className={styles.galleryMountains}>
           <div className={styles.gallery}>
 
           <ResponsiveMasonry
@@ -107,7 +106,7 @@ const MountainsGallery = ({ data }) => {
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.diff1.childImageSharp.fluid} alt="" />
-                <Img fluid={data.diff2.childImageSharp.fluid} alt="" />
+                <Img className={styles.hiddenForMobile} fluid={data.diff2.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -141,7 +140,7 @@ const MountainsGallery = ({ data }) => {
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.gory2.childImageSharp.fluid} alt="" />
-                <Img fluid={data.gory1.childImageSharp.fluid} alt="" />
+                <Img className={styles.hiddenForMobile} fluid={data.gory1.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -211,7 +210,7 @@ const MountainsGallery = ({ data }) => {
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.wlochy3.childImageSharp.fluid} alt="" />
-                <Img fluid={data.wlochy4.childImageSharp.fluid} alt="" />
+                <Img className={styles.hiddenForMobile} fluid={data.wlochy4.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
 
@@ -249,7 +248,7 @@ const MountainsGallery = ({ data }) => {
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
-                <Img fluid={data.mountains27.childImageSharp.fluid} alt="" />
+                <Img className={styles.hiddenForMobile} fluid={data.mountains27.childImageSharp.fluid} alt="" />
                 <Img fluid={data.mountains29.childImageSharp.fluid} alt="" />
                 <Img fluid={data.mountains32.childImageSharp.fluid} alt="" />
               </Masonry>
@@ -321,7 +320,7 @@ const MountainsGallery = ({ data }) => {
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
-                <Img fluid={data.mountains50.childImageSharp.fluid} alt="" />
+                <Img className={styles.hiddenForMobile} fluid={data.mountains50.childImageSharp.fluid} alt="" />
                 <Img fluid={data.mountains51.childImageSharp.fluid} alt="" />
                 <Img fluid={data.mountains62.childImageSharp.fluid} alt="" />
               </Masonry>
@@ -333,7 +332,7 @@ const MountainsGallery = ({ data }) => {
             >
               <Masonry gutter={gutter}>
                 <Img fluid={data.mountains59.childImageSharp.fluid} alt="" />
-                <Img fluid={data.mountains60.childImageSharp.fluid} alt="" />
+                <Img className={styles.hiddenForMobile} fluid={data.mountains60.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
             {/* 
@@ -353,7 +352,7 @@ const MountainsGallery = ({ data }) => {
               className={styles.partOfgallery}
             >
               <Masonry gutter={gutter}>
-                <Img fluid={data.mountains63.childImageSharp.fluid} alt="" />
+                <Img className={styles.hiddenForMobile} fluid={data.mountains63.childImageSharp.fluid} alt="" />
                 <Img fluid={data.mountains64.childImageSharp.fluid} alt="" />
               </Masonry>
             </ResponsiveMasonry>
@@ -368,7 +367,6 @@ const MountainsGallery = ({ data }) => {
               </Masonry>
             </ResponsiveMasonry> */}
           </div>
-        </div>
       </Layout>
     </>
   )

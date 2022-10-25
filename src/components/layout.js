@@ -74,6 +74,14 @@ const Layout = ({ children }) => {
 
           <div className={styles.layoutSeeGaleries}>
             <a
+              className={styles.layoutSeeMoreElement}
+              href="/poland"
+              onClick={scrollToTop}
+            >
+              Podroże po Polsce
+            </a>
+
+            <a
               href="/mountains"
               className={styles.layoutSeeMoreElement}
               onClick={scrollToTop}
@@ -87,14 +95,6 @@ const Layout = ({ children }) => {
               onClick={scrollToTop}
             >
               Podróże
-            </a>
-
-            <a
-              className={styles.layoutSeeMoreElement}
-              href="/poland"
-              onClick={scrollToTop}
-            >
-              Polska
             </a>
 
             <a

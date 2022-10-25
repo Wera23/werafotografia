@@ -15,7 +15,6 @@ const CatsGallery = ({ data }) => {
     <>
       <SEO title={"Wera Chodanionek Fotografia: Koty"} />
       <Layout>
-        <div className={styles.galleryCats}>
           <div className={styles.gallery}>
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
@@ -137,8 +136,7 @@ const CatsGallery = ({ data }) => {
                 {/* <Img fluid={data.cat27.childImageSharp.fluid} alt="" /> */}
               </Masonry>
             </ResponsiveMasonry>
-          </div>
-        </div>        
+          </div>  
       </Layout>
     </>
   )

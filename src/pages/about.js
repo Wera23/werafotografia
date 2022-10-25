@@ -6,17 +6,10 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-// import { Helmet } from "react-helmet"
-
 const About = ({ data }) => {
   return (
     <>
       <SEO title={"Wera Chodanionek Fotografia"} />
-      {/* <Helmet title={} >
-        <meta name="description" content="" />
-        <meta name="description" content="" />
-
-      </Helmet> */}
       <Layout>
         <div className={styles.about}>
           <div className={styles.aboutInside}>
