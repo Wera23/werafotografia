@@ -3,8 +3,6 @@ import classnames from "classnames"
 
 import styles from "./layout.module.scss"
 
-import { StaticImage } from "gatsby-plugin-image"
-
 const Layout = ({ children, data }) => {
   const scrollToTop = () => {
     window.scrollTo(0, 0)
@@ -51,9 +49,9 @@ const Layout = ({ children, data }) => {
           </a>
         </li>
       </ul>
-      
+
       <a href="/" className={styles.pageTitle} onClick={scrollToTop}>
-        Wera Chodanionek <StaticImage src="images/about/logo.png" alt="A dinosaur" />
+        Wera Chodanionek
       </a>
 
       {children}
