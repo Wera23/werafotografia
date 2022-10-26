@@ -7,24 +7,17 @@
 .about {
   @include cenralize;
   width: 100vw;
-  min-height: 100vh;
   height: 100%;
+  margin-top: 230px;
+  margin-bottom: 50px;
   overflow: hidden;
   box-sizing: border-box;
-}
-
-.aboutInside {
-  width: 65vw;
-  @include cenralize;
+  width: 70vw;
 }
 
 .aboutContent {
   display: flex;
   flex: 1;
-  height: auto;
-}
-
-.aboutDescripion {
   height: auto;
 }
 
@@ -49,14 +42,20 @@
 
 .aboutPhoto {
   width: 80%;
+  height: 80%;
   height: auto;
-  max-height: 70vh;
+  border-radius: 50%;
+
 }
 
 @media (max-width: 1200px) {
   .aboutInside {
     flex-direction: column-reverse;
     width: 70vw;
+  }
+
+  .about {
+    margin-top: 70px;
   }
 
   .aboutContent {

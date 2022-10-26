@@ -3,7 +3,9 @@ import classnames from "classnames"
 
 import styles from "./layout.module.scss"
 
-const Layout = ({ children }) => {
+import { StaticImage } from "gatsby-plugin-image"
+
+const Layout = ({ children, data }) => {
   const scrollToTop = () => {
     window.scrollTo(0, 0)
   }
@@ -12,14 +14,7 @@ const Layout = ({ children }) => {
     <div className={styles.page}>
       <ul className={styles.menu}>
         <li className={styles.menuLi}>
-          <i className={classnames("icon-pagelines", styles.menuIcon)} />
-          <a className={styles.menuLink} href="/" onClick={scrollToTop}>
-            Strona główna
-          </a>
-        </li>
-
-        <li className={styles.menuLi}>
-          <i className={classnames("icon-fog-sun", styles.menuIcon)} />
+          <i className="icon-fog-sun" />
           <a className={styles.menuLink} href="/" onClick={scrollToTop}>
             Tematy
           </a>
@@ -56,9 +51,9 @@ const Layout = ({ children }) => {
           </a>
         </li>
       </ul>
-
+      
       <a href="/" className={styles.pageTitle} onClick={scrollToTop}>
-        Wera Chodanionek
+        Wera Chodanionek <StaticImage src="images/about/logo.png" alt="A dinosaur" />
       </a>
 
       {children}
@@ -139,7 +134,7 @@ const Layout = ({ children }) => {
         </div>
       </div>
 
-      <p className={styles.footerText}>Wera Chodanionek Fotografia | 2020</p>
+      <p className={styles.footerText}>Wera Chodanionek Fotografia | 2022</p>
     </div>
   )
 }
