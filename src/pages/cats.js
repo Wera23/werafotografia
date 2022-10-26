@@ -9,134 +9,134 @@ import Layout from "../components/layout"
 import styles from "./Galleries.module.scss"
 
 const CatsGallery = ({ data }) => {
-  const gutter = "2px";
-  
+  const gutter = "2px"
+
   return (
     <>
       <SEO title={"Wera Chodanionek Fotografia: Koty"} />
       <Layout>
-          <div className={styles.gallery}>
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.cat1.childImageSharp.fluid} alt="" />
-                <Img fluid={data.cat18.childImageSharp.fluid} alt="" />
-                <Img fluid={data.cat2.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+        <div className={styles.gallery}>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.cat1.childImageSharp.fluid} alt="" />
+              <Img fluid={data.cat18.childImageSharp.fluid} alt="" />
+              <Img fluid={data.cat2.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.cat7.childImageSharp.fluid} alt="" />
-                <Img fluid={data.cat10.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.cat7.childImageSharp.fluid} alt="" />
+              <Img fluid={data.cat10.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.cat3.childImageSharp.fluid} alt="" />
-                <Img fluid={data.cat20.childImageSharp.fluid} alt="" />
-                <Img fluid={data.cat19.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.cat3.childImageSharp.fluid} alt="" />
+              <Img fluid={data.cat20.childImageSharp.fluid} alt="" />
+              <Img fluid={data.cat19.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.cat8.childImageSharp.fluid} alt="" />
-                <Img fluid={data.cat13.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.cat8.childImageSharp.fluid} alt="" />
+              <Img fluid={data.cat13.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img
-                  className={styles.photoMobileHidden}
-                  fluid={data.cat11.childImageSharp.fluid}
-                  alt=""
-                />
-                <Img fluid={data.cat17.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img
+                className={styles.photoMobileHidden}
+                fluid={data.cat11.childImageSharp.fluid}
+                alt=""
+              />
+              <Img fluid={data.cat17.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.cat6.childImageSharp.fluid} alt="" />
-                <Img
-                  className={styles.photoMobileHidden}
-                  fluid={data.cat5.childImageSharp.fluid}
-                  alt=""
-                />
-                <Img fluid={data.cat12.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 3 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.cat6.childImageSharp.fluid} alt="" />
+              <Img
+                className={styles.photoMobileHidden}
+                fluid={data.cat5.childImageSharp.fluid}
+                alt=""
+              />
+              <Img fluid={data.cat12.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.cat9.childImageSharp.fluid} alt="" />
-                <Img fluid={data.cat14.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.cat9.childImageSharp.fluid} alt="" />
+              <Img fluid={data.cat14.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.cat22.childImageSharp.fluid} alt="" />
-                <Img fluid={data.cat24.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.cat22.childImageSharp.fluid} alt="" />
+              <Img fluid={data.cat24.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.cat15.childImageSharp.fluid} alt="" />
-                <Img fluid={data.cat16.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.cat15.childImageSharp.fluid} alt="" />
+              <Img fluid={data.cat16.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.cat23.childImageSharp.fluid} alt="" />
-                <Img fluid={data.cat28.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.cat23.childImageSharp.fluid} alt="" />
+              <Img fluid={data.cat28.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.cat26.childImageSharp.fluid} alt="" />
-                {/* <Img fluid={data.cat27.childImageSharp.fluid} alt="" /> */}
-              </Masonry>
-            </ResponsiveMasonry>
-          </div>  
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.cat26.childImageSharp.fluid} alt="" />
+              {/* <Img fluid={data.cat27.childImageSharp.fluid} alt="" /> */}
+            </Masonry>
+          </ResponsiveMasonry>
+        </div>
       </Layout>
     </>
   )
@@ -243,7 +243,6 @@ export const query = graphql`
     cat23: file(relativePath: { eq: "images/cat/cat23.jpg" }) {
       ...fluidImage
     }
-
 
     cat24: file(relativePath: { eq: "images/cat/cat24.jpg" }) {
       ...fluidImage

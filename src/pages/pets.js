@@ -36,7 +36,6 @@ const Themes = ({ data }) => {
             </Masonry>
           </ResponsiveMasonry>
 
-
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
             className={styles.partOfgallery}
@@ -117,7 +116,6 @@ const Themes = ({ data }) => {
             </Masonry>
           </ResponsiveMasonry>
 
-          
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
             className={styles.partOfgallery}
@@ -127,9 +125,6 @@ const Themes = ({ data }) => {
               <Img fluid={data.miya24.childImageSharp.fluid} alt="" />
             </Masonry>
           </ResponsiveMasonry>
-
-  
-
         </div>
       </Layout>
     </>
@@ -234,12 +229,10 @@ export const query = graphql`
       ...fluidImage
     }
 
-    
     miya23: file(relativePath: { eq: "images/pets/miya23.png" }) {
       ...fluidImage
     }
 
-    
     miya24: file(relativePath: { eq: "images/pets/miya24.jpg" }) {
       ...fluidImage
     }

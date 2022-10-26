@@ -16,87 +16,87 @@ const SituationsGallery = ({ data }) => {
     <>
       <SEO title={"Wera Chodanionek Fotografia: Akcje"} />
       <Layout>
-          <div className={styles.gallery}>
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.baltic1.childImageSharp.fluid} alt="" />
-                <Img fluid={data.baltic2.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+        <div className={styles.gallery}>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.baltic1.childImageSharp.fluid} alt="" />
+              <Img fluid={data.baltic2.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.baltic3.childImageSharp.fluid} alt="" />
-                <Img fluid={data.baltic4.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.baltic3.childImageSharp.fluid} alt="" />
+              <Img fluid={data.baltic4.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.baltic6.childImageSharp.fluid} alt="" />
-                <Img fluid={data.baltic7.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.baltic6.childImageSharp.fluid} alt="" />
+              <Img fluid={data.baltic7.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.baltic10.childImageSharp.fluid} alt="" />
-                <Img fluid={data.baltic12.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.baltic10.childImageSharp.fluid} alt="" />
+              <Img fluid={data.baltic12.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.baltic8.childImageSharp.fluid} alt="" />
-                <Img fluid={data.baltic9.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.baltic8.childImageSharp.fluid} alt="" />
+              <Img fluid={data.baltic9.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.baltic13.childImageSharp.fluid} alt="" />
-                <Img fluid={data.baltic14.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.baltic13.childImageSharp.fluid} alt="" />
+              <Img fluid={data.baltic14.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.baltic16.childImageSharp.fluid} alt="" />
-                <Img fluid={data.baltic15.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.baltic16.childImageSharp.fluid} alt="" />
+              <Img fluid={data.baltic15.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
 
-            <ResponsiveMasonry
-              columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-              className={styles.partOfgallery}
-            >
-              <Masonry gutter={gutter}>
-                <Img fluid={data.baltic5.childImageSharp.fluid} alt="" />
-                <Img fluid={data.baltic17.childImageSharp.fluid} alt="" />
-              </Masonry>
-            </ResponsiveMasonry>
-          </div>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.baltic5.childImageSharp.fluid} alt="" />
+              <Img fluid={data.baltic17.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
+        </div>
       </Layout>
     </>
   )
