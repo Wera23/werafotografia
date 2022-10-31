@@ -21,53 +21,35 @@
 }
 
 body {
-  position: relative;
   background-color: rgba(240, 236, 231, 0.842);
 }
 
 .page {
   @include centralize;
   flex-direction: column;
-  position: relative;
   width: 100vw;
 }
 
-.pageTitleScroll,
-.pageTitle {
-  font-family: "The Girl Next Door", cursive;
-}
-
-.pageTitleScroll {
-  display: block;
-  position: fixed;
-  bottom: 100px;
-  left: 50px;
-  transition: all ease-in 2s;
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
 }
 
 .pageTitle {
-  position: absolute;
   text-align: center;
-  font-size: 22px;
-  top: 30px;
-  left: 8vw;
+  font-size: 26px;
   padding: 20px 0;
   text-decoration: none;
-}
-
-.menu {
-  position: fixed;
-  top: 30px;
-  right: 8vw;
-  z-index: 23;
-  display: flex;
+  font-family: "The Girl Next Door", cursive;
+  margin-right: 40px;
 }
 
 .menuLink {
   font-family: "Roboto Condensed", sans-serif;
   text-decoration: none;
   font-size: 16px;
-  mix-blend-mode: difference !important;
 }
 
 .menuLink {
@@ -104,12 +86,10 @@ body {
 }
 
 .menuLi {
-  @include centralize;
-  margin-left: 35px;
+margin: 0 20px;
+@include centralize;
+border: 1px solid red;
 
-  &:last-child {
-    margin-left: 5px;
-  }
 }
 
 .menuIcon {
@@ -121,9 +101,7 @@ body {
   color: #c6c6c6;
   font-size: 12px;
   font-weight: 300;
-  position: absolute;
-  bottom: 10px;
-  left: 15vw;
+  padding-bottom: 20px;
 }
 
 .layoutLegend {
@@ -184,23 +162,23 @@ body {
   display: none;
 }
 
+@media (max-width: 850px) {
+
+  .header {
+    flex-direction: column;
+  }
+
+  .menuLi {
+    padding: 12px;
+    
+    }
+  
+.pageTitle {
+  margin-right: 0;
+}
+}
+
 @media (max-width: 768px) {
-  .menu {
-    position: static;
-    @include centralize;
-    width: 100vw;
-  }
-
-  .menuLi:first-child {
-    margin-left: 0;
-    padding: 20px 0;
-  }
-
-  .pageTitle {
-    position: static;
-    width: 100vw;
-    font-size: 30px;
-  }
 
   .layoutSeeMoreElement {
     width: 100%;
@@ -222,10 +200,6 @@ body {
 @media (max-width: 520px) {
   .menu {
     display: none;
-  }
-
-  .pageTitle {
-    padding-top: 60px;
   }
 
   .menuBottom {

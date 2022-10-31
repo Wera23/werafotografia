@@ -10,49 +10,34 @@ const Layout = ({ children, data }) => {
 
   return (
     <div className={styles.page}>
-      <ul className={styles.menu}>
-        <li className={styles.menuLi}>
+   
+      <div className={styles.header}>
+
+      <a href="/" className={styles.pageTitle} onClick={scrollToTop}>
+          Wera Chodanionek Fotografia
+        </a>
+        <div className={styles.menuLi}>
           <i className="icon-fog-sun" />
           <a className={styles.menuLink} href="/" onClick={scrollToTop}>
-            Tematy
+            Portfolio
           </a>
-        </li>
+        </div>
 
-        <li className={styles.menuLi}>
+      
+        <div className={styles.menuLi}>
           <i className={classnames("icon-paper-plane", styles.menuIcon)} />
           <a className={styles.menuLink} href="/about" onClick={scrollToTop}>
             Kontakt
           </a>
-        </li>
+        </div>
 
-        <li className={styles.menuLi}>
-          <a
-            className={styles.menuLink}
-            href="https://www.instagram.com/werachodanionek/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className={classnames("icon-instagram", styles.menuIcon)} />
+        <div className={styles.menuLi}>
+          <i className={classnames("icon-paper-plane", styles.menuIcon)} />
+          <a className={styles.menuLink} href="/" onClick={scrollToTop}>
+            Historie
           </a>
-        </li>
-
-        <li className={styles.menuLi}>
-          <a
-            className={styles.menuLink}
-            href="https://www.facebook.com/profile.php?id=100008104848404"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i
-              className={classnames("icon-facebook-circled", styles.menuIcon)}
-            />
-          </a>
-        </li>
-      </ul>
-
-      <a href="/" className={styles.pageTitle} onClick={scrollToTop}>
-        Wera Chodanionek
-      </a>
+        </div>
+      </div>
 
       {children}
 

@@ -4,6 +4,8 @@ import classnames from "classnames"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 
+import "../assets/fontello/css/fontello.css"
+
 import styles from "./projects.module.scss"
 
 const Projects = () => {
