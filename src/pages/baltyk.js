@@ -104,15 +104,15 @@ const SituationsGallery = ({ data }) => {
 
 export default SituationsGallery
 
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`
+// export const fluidImage = graphql`
+//   fragment fluidImage on File {
+//     childImageSharp {
+//       fluid {
+//         ...GatsbyImageSharpFluid
+//       }
+//     }
+//   }
+// `
 
 export const query = graphql`
   query {
