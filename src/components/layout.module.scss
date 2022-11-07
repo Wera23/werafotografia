@@ -30,7 +30,7 @@ body {
   width: 100vw;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +44,10 @@ body {
   text-decoration: none;
   font-family: "The Girl Next Door", cursive;
   margin-right: 40px;
+}
+
+.footerLink {
+  @include centralize;
 }
 
 .menuLink {
@@ -86,10 +90,8 @@ body {
 }
 
 .menuLi {
-margin: 0 20px;
-@include centralize;
-border: 1px solid red;
-
+  margin: 0 20px;
+  @include centralize;
 }
 
 .menuIcon {
@@ -138,7 +140,7 @@ border: 1px solid red;
   display: flex;
   flex: 1;
   justify-content: center;
-  border-left: 1px solid rgb(143, 141, 141);
+  margin-left: 6px;
 
   text-transform: uppercase;
   font-size: 14px;
@@ -163,23 +165,20 @@ border: 1px solid red;
 }
 
 @media (max-width: 850px) {
-
   .header {
     flex-direction: column;
   }
 
   .menuLi {
     padding: 12px;
-    
-    }
-  
-.pageTitle {
-  margin-right: 0;
-}
+  }
+
+  .pageTitle {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 768px) {
-
   .layoutSeeMoreElement {
     width: 100%;
     border-left: none;

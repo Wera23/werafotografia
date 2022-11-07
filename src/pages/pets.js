@@ -16,6 +16,26 @@ const Themes = ({ data }) => {
       <SEO title={"Wera Chodanionek Fotografia"} />
       <Layout>
         <div className={styles.gallery}>
+
+        <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.dom3.childImageSharp.fluid} alt="" />
+              <Img fluid={data.dom1.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.dom4.childImageSharp.fluid} alt="" />
+              <Img fluid={data.dom2.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
+
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
             className={styles.partOfgallery}
@@ -23,6 +43,16 @@ const Themes = ({ data }) => {
             <Masonry gutter={gutter}>
               <Img fluid={data.miya1.childImageSharp.fluid} alt="" />
               <Img fluid={data.miya2.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
+
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.miya23.childImageSharp.fluid} alt="" />
+              <Img fluid={data.miya25.childImageSharp.fluid} alt="" />
             </Masonry>
           </ResponsiveMasonry>
 
@@ -116,15 +146,7 @@ const Themes = ({ data }) => {
             </Masonry>
           </ResponsiveMasonry>
 
-          <ResponsiveMasonry
-            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
-            className={styles.partOfgallery}
-          >
-            <Masonry gutter={gutter}>
-              <Img fluid={data.miya23.childImageSharp.fluid} alt="" />
-              <Img fluid={data.miya24.childImageSharp.fluid} alt="" />
-            </Masonry>
-          </ResponsiveMasonry>
+  
         </div>
       </Layout>
     </>
@@ -236,5 +258,20 @@ export const query = graphql`
     miya24: file(relativePath: { eq: "images/pets/miya24.jpg" }) {
       ...fluidImage
     }
+    miya25: file(relativePath: { eq: "images/pets/miya25.jpg" }) {
+      ...fluidImage
+    }
+    dom1: file(relativePath: { eq: "images/stories/dom1.jpg" }) {
+      ...fluidImage
+    }
+    dom2: file(relativePath: { eq: "images/stories/dom2.jpg" }) {
+      ...fluidImage
+    }
+    dom3: file(relativePath: { eq: "images/stories/dom3.jpg" }) {
+        ...fluidImage
+      }
+      dom4: file(relativePath: { eq: "images/stories/dom4.jpg" }) {
+        ...fluidImage
+      }
   }
 `

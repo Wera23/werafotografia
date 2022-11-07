@@ -10,10 +10,8 @@ const Layout = ({ children, data }) => {
 
   return (
     <div className={styles.page}>
-   
       <div className={styles.header}>
-
-      <a href="/" className={styles.pageTitle} onClick={scrollToTop}>
+        <a href="/" className={styles.pageTitle} onClick={scrollToTop}>
           Wera Chodanionek Fotografia
         </a>
         <div className={styles.menuLi}>
@@ -23,17 +21,18 @@ const Layout = ({ children, data }) => {
           </a>
         </div>
 
-      
         <div className={styles.menuLi}>
-          <i className={classnames("icon-paper-plane", styles.menuIcon)} />
+          <i
+            className={classnames("icon-paper-plane-empty", styles.menuIcon)}
+          />
           <a className={styles.menuLink} href="/about" onClick={scrollToTop}>
             Kontakt
           </a>
         </div>
 
         <div className={styles.menuLi}>
-          <i className={classnames("icon-paper-plane", styles.menuIcon)} />
-          <a className={styles.menuLink} href="/" onClick={scrollToTop}>
+          <i className={classnames("icon-umbrella", styles.menuIcon)} />
+          <a className={styles.menuLink} href="/stories" onClick={scrollToTop}>
             Historie
           </a>
         </div>
@@ -43,45 +42,51 @@ const Layout = ({ children, data }) => {
 
       <div className={styles.layoutLegend}>
         <div className={styles.layoutSeeMore}>
-          <h2>
-            Zobacz galerie
-            <i
-              className={classnames("icon-pagelines", styles.layoutSeeMoreIcon)}
-            />
-          </h2>
+          <h2>Zobacz galerie</h2>
 
           <div className={styles.layoutSeeGaleries}>
-            <a
-              className={styles.layoutSeeMoreElement}
-              href="/poland"
-              onClick={scrollToTop}
-            >
-              Podroże po Polsce
-            </a>
+            <div className={styles.footerLink}>
+              <i className={classnames("icon-bicycle")} />
+              <a
+                className={styles.layoutSeeMoreElement}
+                href="/poland"
+                onClick={scrollToTop}
+              >
+                Podroże po Polsce
+              </a>
+            </div>
+            <div className={styles.footerLink}>
+              <i className={classnames("icon-tree")} />
+              <a
+                href="/mountains"
+                className={styles.layoutSeeMoreElement}
+                onClick={scrollToTop}
+              >
+                Góry
+              </a>
+            </div>
 
-            <a
-              href="/mountains"
-              className={styles.layoutSeeMoreElement}
-              onClick={scrollToTop}
-            >
-              Góry
-            </a>
+            <div className={styles.footerLink}>
+              <i className={classnames("icon-flight-1")} />
+              <a
+                className={styles.layoutSeeMoreElement}
+                href="/travels"
+                onClick={scrollToTop}
+              >
+                Podróże
+              </a>
+            </div>
 
-            <a
-              className={styles.layoutSeeMoreElement}
-              href="/travels"
-              onClick={scrollToTop}
-            >
-              Podróże
-            </a>
-
-            <a
-              className={styles.layoutSeeMoreElement}
-              href="/pets"
-              onClick={scrollToTop}
-            >
-              Pets
-            </a>
+            <div className={styles.footerLink}>
+              <i className={classnames("icon-paw")} />
+              <a
+                className={styles.layoutSeeMoreElement}
+                href="/pets"
+                onClick={scrollToTop}
+              >
+                Pets
+              </a>
+            </div>
           </div>
         </div>
         <div className={styles.menuBottom}>
