@@ -16,6 +16,25 @@ const PolskaGallery = ({ data }) => {
       <SEO title={"Wera Chodanionek Fotografia: Kadry z Polski"} />
       <Layout>
         <div className={styles.gallery}>
+
+        <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.pl1.childImageSharp.fluid} alt="" />
+              <Img fluid={data.pl4.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.pl3.childImageSharp.fluid} alt="" />
+              <Img fluid={data.pl12.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
             className={styles.partOfgallery}
@@ -25,6 +44,8 @@ const PolskaGallery = ({ data }) => {
               <Img fluid={data.pol1.childImageSharp.fluid} alt="" />
             </Masonry>
           </ResponsiveMasonry>
+
+
 
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
@@ -114,6 +135,7 @@ const PolskaGallery = ({ data }) => {
             </Masonry>
           </ResponsiveMasonry>
 
+
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
             className={styles.partOfgallery}
@@ -125,6 +147,22 @@ const PolskaGallery = ({ data }) => {
                 alt=""
               />
               <Img fluid={data.pol25.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
+
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img
+                fluid={data.pl6.childImageSharp.fluid}
+                alt=""                
+              />
+              <Img
+                fluid={data.pl11.childImageSharp.fluid}
+                alt=""
+              />
             </Masonry>
           </ResponsiveMasonry>
 
@@ -341,6 +379,16 @@ const PolskaGallery = ({ data }) => {
             <Masonry gutter={gutter}>
               <Img fluid={data.pol20.childImageSharp.fluid} alt="" />
               <Img fluid={data.pol19.childImageSharp.fluid} alt="" />
+            </Masonry>
+          </ResponsiveMasonry>
+
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
+            className={styles.partOfgallery}
+          >
+            <Masonry gutter={gutter}>
+              <Img fluid={data.pl9.childImageSharp.fluid} alt="" />
+              <Img fluid={data.pl5.childImageSharp.fluid} alt="" />
             </Masonry>
           </ResponsiveMasonry>
 
@@ -1140,6 +1188,52 @@ export const query = graphql`
     }
 
     pol58: file(relativePath: { eq: "images/polska/pol58.jpg" }) {
+      ...fluidImage
+    }
+
+    pl1: file(relativePath: { eq: "images/polska/pl1.jpg" }) {
+      ...fluidImage
+    }
+    pl2: file(relativePath: { eq: "images/polska/pl2.jpg" }) {
+      ...fluidImage
+    }
+
+    pl3: file(relativePath: { eq: "images/polska/pl3.jpg" }) {
+      ...fluidImage
+    }
+
+    pl4: file(relativePath: { eq: "images/polska/pl4.jpg" }) {
+      ...fluidImage
+    }
+
+    pl5: file(relativePath: { eq: "images/polska/pl5.jpg" }) {
+      ...fluidImage
+    }
+
+    pl6: file(relativePath: { eq: "images/polska/pl6.jpg" }) {
+      ...fluidImage
+    }
+
+    pl7: file(relativePath: { eq: "images/polska/pl7.jpg" }) {
+      ...fluidImage
+    }
+
+    pl8: file(relativePath: { eq: "images/polska/pl8.jpg" }) {
+      ...fluidImage
+    }
+
+    pl9: file(relativePath: { eq: "images/polska/pl9.jpg" }) {
+      ...fluidImage
+    }
+
+    pl10: file(relativePath: { eq: "images/polska/pl10.jpg" }) {
+      ...fluidImage
+    }
+
+    pl11: file(relativePath: { eq: "images/polska/pl11.jpg" }) {
+      ...fluidImage
+    }
+    pl12: file(relativePath: { eq: "images/polska/pl12.jpg" }) {
       ...fluidImage
     }
   }

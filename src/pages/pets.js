@@ -17,7 +17,7 @@ const Themes = ({ data }) => {
       <Layout>
         <div className={styles.gallery}>
 
-        <ResponsiveMasonry
+        {/* <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
             className={styles.partOfgallery}
           >
@@ -25,7 +25,7 @@ const Themes = ({ data }) => {
               <Img fluid={data.dom3.childImageSharp.fluid} alt="" />
               <Img fluid={data.dom1.childImageSharp.fluid} alt="" />
             </Masonry>
-          </ResponsiveMasonry>
+          </ResponsiveMasonry> */}
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 1, 900: 2 }}
             className={styles.partOfgallery}

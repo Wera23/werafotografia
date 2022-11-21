@@ -54,7 +54,7 @@ const About = ({ data }) => {
 
                 <a
                   className={styles.menuLink}
-                  href="https://www.instagram.com/werachodanionek/"
+                  href="https://www.instagram.com/miya.golden.friend/"
                   target="_blank"
                   rel="noreferrer"
                 >
